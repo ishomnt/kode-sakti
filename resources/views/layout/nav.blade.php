@@ -40,7 +40,12 @@
             <i class="fa fa-bars"></i>
         </button>
 
-
-
     </div>
 </nav>
+
+<div class="content">
+    <!-- Add some content here to scroll -->
+    <div style="height: 2000px; padding: 20px;">
+        <h1>Scroll down to see the effect</h1>
+    </div>
+</div>

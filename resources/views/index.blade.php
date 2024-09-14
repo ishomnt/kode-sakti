@@ -13,5 +13,7 @@
     <div class="container mt-4">
         @yield('container')
     </div>
+
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

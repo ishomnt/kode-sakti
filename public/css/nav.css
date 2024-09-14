@@ -1,33 +1,33 @@
-.navbar-icon img {
-    width: 69.28px;
-    margin: 15px 30px 15px 15px;
+/* Initial transparent navbar */
+#navbar {
+    background: transparent;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-@media screen and (max-width: 767px) {
-    .navbar-icon img {
-        width: 23.8px;
-        margin: 15px 30px 15px 15px;
-    }
+/* When scrolled, apply blur and background */
+#navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
 }
 
-@media only screen and (max-width: 992px) and (min-width: 767px) {
-    .navbar-icon img {
-        width: 43.8px;
-        margin: 15px 30px 15px 15px;
-    }
+.navbar-nav .nav-link {
+    color: #000; /* Navbar link color */
 }
 
-.nav-artikel {
-    color: rgba(0, 0, 0, 0.5);
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19.5px;
-    /* 150% */
+.navbar-nav .nav-link:hover {
+    color: #555; /* On hover, darken the color */
 }
 
-.nav-artikel:hover {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.9);
-    fill: rgba(0, 0, 0, 0.9);
+/* Add styling for the toggle button for mobile */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Transparent button */
+}
+
+.navbar-toggler .fa-bars {
+    color: #fff; /* White hamburger icon */
+}
+
+/* Optional: Adjust navbar brand logo size */
+#lg-l {
+    max-height: 40px; /* Adjust logo height */
 }
