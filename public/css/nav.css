@@ -1,0 +1,33 @@
+.navbar-icon img {
+    width: 69.28px;
+    margin: 15px 30px 15px 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-icon img {
+        width: 23.8px;
+        margin: 15px 30px 15px 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+    .navbar-icon img {
+        width: 43.8px;
+        margin: 15px 30px 15px 15px;
+    }
+}
+
+.nav-artikel {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.5px;
+    /* 150% */
+}
+
+.nav-artikel:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    fill: rgba(0, 0, 0, 0.9);
+}
