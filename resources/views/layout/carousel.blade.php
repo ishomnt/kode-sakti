@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
 </head>
+
 <body>
 
     <!-- slider -->
@@ -53,29 +56,39 @@
             <button id="next">></button>
         </div>
         <!-- thumbnail -->
-        <div class="thumbnail">
-            <div class="item active">
-                <img src="{{ asset('image/belajar1.jpg') }}">
-                <div class="content">
-                    Pembelajaran
+        <div class="thumbnail-wrapper">
+            <div class="thumbnail">
+                <div class="item active">
+                    <img src="{{ asset('image/belajar1.jpg') }}">
+                    <div class="content">
+                        Pembelajaran
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('image/belajar2.jpg') }}">
+                    <div class="content">
+                        Kursus lengkap
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('image/belajar3.jpg') }}">
+                    <div class="content">
+                        Proyek nyata
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <img src="{{ asset('image/belajar2.jpg') }}">
-                <div class="content">
-                    Kursus lengkap
-                </div>
-            </div>
-            <div class="item">
-                <img src="{{ asset('image/belajar3.jpg') }}">
-                <div class="content">
-                    Proyek nyata
-                </div>
-            </div>
+        </div>
+        <div class="jenjang-container">
+            <button class="jenjang-btn fs">VIDEO TUTORIAL</button>
+            <button class="jenjang-btn">MATERI</button>
+            <button class="jenjang-btn">LATIHAN SOAL</button>
+            <button class="jenjang-btn">KOMUNITAS</button>
         </div>
     </div>
 
 
+
     <script src="{{ asset('js/carousel.js') }}"></script>
 </body>
+
 </html>
