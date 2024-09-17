@@ -16,8 +16,10 @@
 <body>
     @include('layout.nav')
     @include('layout.carousel')
-    @include('layout.card')
     
+    <div class="container mt-4">
+        @include('layout.card')
+    </div>
     <div class="container mt-4">
         @yield('container')
     </div>
