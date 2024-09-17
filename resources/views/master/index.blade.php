@@ -15,29 +15,12 @@
 <body>
     @include('layout.nav')
     @include('layout.carousel')
-
+    
     <div class="container mt-4">
         @yield('container')
     </div>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const icon = hamburger.querySelector('i');
 
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-
-            // Ganti ikon antara hamburger dan X
-            if (mobileMenu.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
-    </script>
     <script src="{{ asset('js/carousel.js') }}"></script>
 
 </body>

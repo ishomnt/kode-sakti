@@ -1,8 +1,8 @@
 <header>
     <nav class="navbar">
-      <div class="logo">< BeCo /></div>
+      <a href="" class="logo"><img src="{{ asset('image/Logo BeCo.png') }}" class="logo-img" alt=""></a>
       <ul class="nav-items">
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Beranda</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">FAQ</a></li>
@@ -13,7 +13,7 @@
     </nav>
     <div class="mobile-menu">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Beranda</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">FAQ</a></li>
