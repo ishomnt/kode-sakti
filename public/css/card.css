@@ -1,0 +1,76 @@
+
+.card {
+    width: 220px;
+    height: 400px; /* Set a fixed height for consistency */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; /* Ensure padding is included in the total height and width */
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background-color: #5963f3;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.card-body strike {
+    color: #999;
+    font-size: 14px;
+}
+
+strong {
+    color: #fa5a1e;
+    font-size: 16px;
+}
+
+button {
+    background-color: #fa5a1e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #e04b1a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;
+}
