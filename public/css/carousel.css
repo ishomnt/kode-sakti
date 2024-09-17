@@ -2,7 +2,7 @@ body {
     font-family: Poppins;
     margin: 0;
     color: #eee;
-    box-shadow: 0 0 15px rgba(0, 74, 173, 0.5), /* Efek biru dengan warna #004aad */
+    box-shadow: 0 0 15px rgba(0, 74, 173, 0.5), 
     0 0 30px rgba(0, 74, 173, 0.3);
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .slider .list .item .content h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0;
     line-height: 1.2;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .slider .list .item .content p:nth-child(3) {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.6;
 }
 

@@ -29,7 +29,7 @@
                 <img src="{{ asset('image/belajar2.jpg') }}">
                 <div class="content">
                     <p>Kursus Lengkap</p>
-                    <h3>Kuasi Keterampilan Coding</h3>
+                    <h3>Kuasai Keterampilan Coding</h3>
                     <p>
                         Jelajahi berbagai bahasa dan teknologi pemrograman dengan kursus yang terstruktur.
                         Tingkatkan pengetahuan Anda langkah demi langkah dan kuasai coding dengan percaya diri.
