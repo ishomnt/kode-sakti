@@ -13,8 +13,8 @@ header.scrolled {
   width: 90%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(15px); 
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
   border-radius: 20px;
 
 }
@@ -23,8 +23,7 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 20px; 
-  color: #fff;
+  padding: 8px 20px;
   transition: width 0.3s;
 }
 

@@ -43,7 +43,7 @@ html, body {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #1f548f;
+    color: #40a5ff;
     position: relative;
     padding-bottom: 10px;
     display: inline-block;
@@ -56,7 +56,7 @@ html, body {
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: #1f548f;
+    background-color: #40a5ff;
     transform: scaleX(1);
     transition: background-color 0.3s;
 }
@@ -82,7 +82,7 @@ html, body {
 }
 
 .footer-col ul li a:hover {
-    color: #1f548f;
+    color: #40a5ff;
     transform: translateX(10px);
 }
 
@@ -93,7 +93,7 @@ html, body {
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: #1f548f;
+    background-color: #40a5ff;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s;
@@ -163,13 +163,14 @@ html, body {
 }
 
 #scrollToTopBtn {
-    background-color: #1f548f; /* Warna latar belakang tombol */
+    background-color: #5963f3; /* Warna latar belakang tombol */
     border: none;
     border-radius: 5px; /* Ubah menjadi kotak dengan sudut sedikit melengkung */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     display: none; /* Disembunyikan secara default */
     padding: 0; /* Hapus padding untuk mengatur tinggi dan lebar tombol */
+    padding-top: 7px;
     width: 50px; /* Lebar tombol */
     height: 50px; /* Tinggi tombol */
     text-align: center;
