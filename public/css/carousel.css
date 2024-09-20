@@ -210,6 +210,90 @@
     transition: ease-in .1s;
 }
 
+/* Modal container (hidden by default) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden; /* Prevent interaction when hidden */
+    transition: opacity 0.2s ease, visibility 0.2s ease; /* Smooth transition for fade in/out */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: relative;
+    transform: scale(0.8); /* Initial small scale */
+    transition: transform 0.2s ease; /* Smooth transform */
+}
+
+/* Show modal with transition */
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.show .modal-content {
+    transform: scale(1); /* Full size when modal is open */
+}
+
+/* The close button */
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button grid inside modal */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Button styles */
+.btn-modal {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: background-color 0.3s ease;
+}
+
+.btn-modal:hover {
+    background-color: #f9f9f9;
+}
+
 @media screen and (max-width: 1220px) {
     .menu-container {
         width: 80%;

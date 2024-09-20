@@ -65,17 +65,29 @@
         </div>
     </div>
     <div class="menu-container">
-        <button class="menu-btn">
-            <iconify-icon icon="icon-park:video-one" width="1.5em" height="1.5em"></iconify-icon> VIDEO TUTORIAL
+        <button class="menu-btn" id="openModalBtn">
+            <iconify-icon icon="icon-park:video-one" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >VIDEO TUTORIAL</span>
         </button>
-        <button class="menu-btn">
-            <iconify-icon icon="icon-park:book" width="1.5em" height="1.5em"></iconify-icon> MATERI
+        <button class="menu-btn" id="openModalBtn">
+            <iconify-icon icon="icon-park:book" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >MATERI</span>
         </button>
-        <button class="menu-btn">
-            <iconify-icon icon="emojione:pen" width="1.5em" height="1.5em"></iconify-icon> LATIHAN SOAL
+        <button class="menu-btn" id="openModalBtn">
+            <iconify-icon icon="emojione:pen" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >LATIHAN SOAL</span>
         </button>
-        <button class="menu-btn">
-            <iconify-icon icon="icon-park:every-user" width="1.5em" height="1.5em"></iconify-icon> KOMUNITAS
+        <button class="menu-btn" id="openModalBtn">
+            <iconify-icon icon="icon-park:every-user" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >MATERI</span>
         </button>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="button-grid">
+            <a href="#" class="btn-modal">HTML</a>
+            <a href="#" class="btn-modal">CSS</a>
+            <a href="#" class="btn-modal">JavaScript</a>
+            <a href="#" class="btn-modal">PHP</a>
+          </div>
     </div>
 </div>

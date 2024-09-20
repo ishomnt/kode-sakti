@@ -18,11 +18,8 @@
     @include('layout.nav')
     @include('layout.carousel')
 
-    <div class="container mt-4">
+    <div class="container-fluid mt-4">
         @include('layout.card')
-    </div>
-    <div class="container mt-4">
-        @yield('container')
     </div>
 
     @include('layout.footer')
@@ -30,6 +27,7 @@
 
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <script src="{{ asset('js/carousel.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 
     <script>
         const hamburger = document.querySelector('.hamburger');
