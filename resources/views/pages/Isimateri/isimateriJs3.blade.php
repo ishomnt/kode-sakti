@@ -12,7 +12,7 @@
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
-            <h1 class="article-title">Tutorial #03: Memahami Variabel dan Tipe Data dalam JavaScript</h1>
+            <h1 class="article-title">Tutorial JavaScript #03: Memahami Variabel dan Tipe Data dalam JavaScript</h1>
             <hr class="title-underline">
         </header>
 
@@ -148,21 +148,21 @@ var umur1 = 30; // Valid
         <div class="list-item">
             <a href="#" class="list-link">
                 <span class="icon">&#128196;</span>
-                Tutorial #01: Pengenalan Dasar JavaScript
+                Tutorial JavaScript #01: Pengenalan Dasar JavaScript
             </a>
         </div>
 
         <div class="list-item">
             <a href="" class="list-link">
                 <span class="icon">&#128196;</span>
-                Tutorial #02: 4 Cara Menampilkan Output pada JavaScript
+                Tutorial JavaScript #02: 4 Cara Menampilkan Output pada JavaScript
             </a>
         </div>
 
         <div class="list-item checked">
             <a href="" class="list-link">
                 <span class="icon">&#x2714;</span>
-                Tutorial #03: Memahami Variabel dan Tipe Data dalam JavaScript
+                Tutorial JavaScript #03: Memahami Variabel dan Tipe Data dalam JavaScript
             </a>
         </div>
     </div>

@@ -12,7 +12,7 @@
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
-            <h1 class="article-title">Tutorial #02: Sintaks Dasar PHP yang Wajib Kamu Pahami</h1>
+            <h1 class="article-title">Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami</h1>
             <hr class="title-underline">
         </header>
 
@@ -140,21 +140,21 @@ if ($umur >= 18) {
         <div class="list-item ">
             <a href="#" class="list-link">
                 <span class="icon">&#128196;</span>
-                Tutorial #01: Pengenalan Dasar Pemrograman PHP
+                Tutorial PHP #01: Pengenalan Dasar Pemrograman PHP
             </a>
         </div>
 
         <div class="list-item checked">
             <a href="" class="list-link">
                 <span class="icon">&#x2714;</span>
-                Tutorial #02: Sintaks Dasar PHP yang Wajib Kamu Pahami
+                Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami
             </a>
         </div>
 
         <div class="list-item">
             <a href="" class="list-link">
                 <span class="icon">&#128196;</span>
-                Tutorial #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data
+                Tutorial PHP #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data
             </a>
         </div>
     </div>
