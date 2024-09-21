@@ -19,7 +19,8 @@
     @include('layout.carousel')
 
     <div class="container-fluid mt-4">
-        @include('layout.card')
+        @include('layout.card-video')
+        @include('layout.card-materi')
     </div>
 
     @include('layout.footer')
