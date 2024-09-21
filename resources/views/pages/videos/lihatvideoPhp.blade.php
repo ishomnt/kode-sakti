@@ -26,9 +26,6 @@
                         <div class="col-md-10">
                             <h3>STEP 1 - OOP Dasar PHP: Pendahuluan</h3>
                         </div>
-                        <div class="col-md-2 text-end">
-                            <i class="fa-solid fa-circle-info fa-2x" data-bs-toggle="tooltip" data-bs-title="Ini Hanya Video Contoh"></i>
-                        </div>
                     </div>
                     <p>Video ini memberikan pengenalan dasar tentang OOP dalam PHP. Kamu akan belajar tentang konsep dasar OOP dan bagaimana konsep ini diterapkan dalam PHP untuk membangun aplikasi web dinamis.</p>
         <p><strong>Di dalam video ini, kamu akan mempelajari:</strong></p>
@@ -54,9 +51,6 @@
                         <div class="col-md-10">
                             <h3>STEP 2 - OOP Dasar PHP: Class dan Object</h3>
                         </div>
-                        <div class="col-md-2 text-end">
-                            <i class="fa-solid fa-circle-info fa-2x" data-bs-toggle="tooltip" data-bs-title="Ini Hanya Video Contoh"></i>
-                        </div>
                     </div>
                     <p>Latihan ini memperdalam pemahaman tentang class dan object dalam OOP PHP. Kamu akan belajar cara mendefinisikan class, membuat object, dan mengelola data serta perilaku dalam aplikasi PHP menggunakan OOP.</p>
         <p><strong>Di dalam video ini, kamu akan mempelajari:</strong></p>
@@ -81,9 +75,6 @@
                     <div class="row align-items-center">
                         <div class="col-md-10">
                             <h3>STEP 3 - OOP Dasar PHP: Property dan Method</h3>
-                        </div>
-                        <div class="col-md-2 text-end">
-                            <i class="fa-solid fa-circle-info fa-2x" data-bs-toggle="tooltip" data-bs-title="Ini Hanya Video Contoh"></i>
                         </div>
                     </div>
                     <p>Di video ini, kamu akan mempelajari detail lebih lanjut tentang properties dan methods dalam OOP PHP. Fokus utama adalah pada bagaimana mendefinisikan dan menggunakan property serta method dalam class PHP.</p>
