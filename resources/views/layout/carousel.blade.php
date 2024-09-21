@@ -84,10 +84,10 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <div class="button-grid">
-            <a href="{{ route('html-css') }}" class="btn-modal">HTML & CSS</a>
-            <a href="{{ route('javascript') }}" class="btn-modal">JavaScript</a>
-            <a href="{{ route('php') }}" class="btn-modal">PHP</a>
-            <a href="{{ route('laravel') }}" class="btn-modal">Laravel</a>
+            <a href="{{ route('materi', ['materi' => 'tutorial-html-css']) }}" class="btn-modal">HTML & CSS</a>
+            <a href="{{ route('materi', ['materi' => 'tutorial-javascript']) }}" class="btn-modal">JavaScript</a>
+            <a href="{{ route('materi', ['materi' => 'tutorial-php']) }}" class="btn-modal">PHP</a>
+            <a href="{{ route('materi', ['materi' => 'tutorial-laravel']) }}" class="btn-modal">Laravel</a>
           </div>
     </div>
 </div>
