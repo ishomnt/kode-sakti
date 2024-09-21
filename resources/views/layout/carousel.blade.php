@@ -65,22 +65,23 @@
         </div>
     </div>
     <div class="menu-container">
-        <button class="menu-btn" id="openModalBtn">
+        <button class="menu-btn" id="btn-video">
             <iconify-icon icon="icon-park:video-one" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >VIDEO TUTORIAL</span>
         </button>
-        <button class="menu-btn" id="openModalBtn">
+        <button class="menu-btn" id="btn-materi">
             <iconify-icon icon="icon-park:book" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >MATERI</span>
         </button>
         <button class="menu-btn" id="openModalBtn">
             <iconify-icon icon="emojione:pen" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >LATIHAN SOAL</span>
         </button>
-        <button class="menu-btn" id="openModalBtn">
-            <iconify-icon icon="icon-park:every-user" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >MATERI</span>
-        </button>
+        <a href="{{ route('komunitas') }}" class="menu-btn">
+            <iconify-icon icon="icon-park:every-user" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >KOMUNITAS</span>
+        </a>
     </div>
 </div>
 
-<div id="myModal" class="modal">
+{{-- Modal Video --}}
+<div id="modal-video" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
         <div class="button-grid">
@@ -88,6 +89,19 @@
             <a href="{{ route('video', ['video' => 'tutorial-javascript']) }}" class="btn-modal">JavaScript</a>
             <a href="{{ route('video', ['video' => 'tutorial-php']) }}" class="btn-modal">PHP</a>
             <a href="{{ route('video', ['video' => 'tutorial-laravel']) }}" class="btn-modal">Laravel</a>
+          </div>
+    </div>
+</div>
+
+{{-- Modal Materi --}}
+<div id="modal-materi" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="button-grid">
+            <a href="{{ route('materi', ['materi' => 'materi-html']) }}" class="btn-modal">HTML</a>
+            <a href="{{ route('materi', ['materi' => 'materi-css']) }}" class="btn-modal">CSS</a>
+            <a href="{{ route('materi', ['materi' => 'materi-javascript']) }}" class="btn-modal">JavaScript</a>
+            <a href="{{ route('materi', ['materi' => 'materi-php']) }}" class="btn-modal">PHP</a>
           </div>
     </div>
 </div>
