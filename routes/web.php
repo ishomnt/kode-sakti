@@ -8,7 +8,7 @@ Route::get('/', function () {
     return view('master.index');
 });
 
-Route::get('/materi/{materi}', [VideoController::class, 'show'])->name('materi');
+Route::get('/video/{video}', [VideoController::class, 'show'])->name('video');
 
 Route::get('semua-materi', function () {
     return view('materi.materi');

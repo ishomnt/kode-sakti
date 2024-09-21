@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class VideoController extends Controller
 {
-    public function show($materi)
+    public function show($video)
     {
         // Cek topik yang diklik dan arahkan ke view yang sesuai
-        switch($materi) {
+        switch($video) {
             case 'tutorial-html-css':
                 return view('pages.videos.video-html-css');
             case 'tutorial-javascript':
