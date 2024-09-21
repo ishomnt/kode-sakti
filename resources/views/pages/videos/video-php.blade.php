@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Video Iframe</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="{{ asset('css/lihatvideo.css') }}">
-</head>
-
-<body>
-    <div class="container my-5">
+@extends('pages.videos.main-video')
+@section('title', 'Video Tutorial PHP')
+@section('content-video')
         <h2 class="section-title">Video Tutorial PHP</h2>
         <!-- Video 1 -->
         <div class="video-description p-3 shadow">
@@ -28,7 +17,7 @@
                         </div>
                     </div>
                     <p>Video ini memberikan pengenalan dasar tentang OOP dalam PHP. Kamu akan belajar tentang konsep dasar OOP dan bagaimana konsep ini diterapkan dalam PHP untuk membangun aplikasi web dinamis.</p>
-        <p><strong>Di dalam video ini, kamu akan mempelajari:</strong></p>
+                    <p><strong>Di dalam video ini, kamu akan mempelajari:</strong></p>
                     <ul>
                         <li>Pengenalan OOP dan manfaatnya dalam pengembangan perangkat lunak.</li>
                         <li>Bagaimana OOP membantu dalam mengorganisir kode dan membuatnya lebih mudah dipelihara.</li>
