@@ -46,10 +46,7 @@
                 icon.classList.add('fa-bars');
             }
         });
-        s
-    </script>
-
-    <script>
+        
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 50) { // Adjust the value as needed

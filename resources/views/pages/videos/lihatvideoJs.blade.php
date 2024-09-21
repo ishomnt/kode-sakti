@@ -12,30 +12,27 @@
 
 <body>
     <div class="container my-5">
-        <h2 class="section-title">Video Tutorial Laravel</h2>
+        <h2 class="section-title">Video Tutorial JavaScript</h2>
         <!-- Video 1 -->
         <div class="video-description p-3 shadow">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <iframe class="video-frame" src="https://www.youtube.com/embed/mbm-1l_pW44" title="YouTube video"
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/sNLadea-tLU" title="YouTube video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-12">
                     <div class="row align-items-center">
                         <div class="col-md-10">
-                            <h3>STEP 1 - INTRO LARAVEL</h3>
-                        </div>
-                        <div class="col-md-2 text-end">
-                            <i class="fa-solid fa-circle-info fa-2x" data-bs-toggle="tooltip" data-bs-title="Ini Hanya Video Contoh"></i>
+                            <h3>1. Apa Itu JavaScript</h3>
                         </div>
                     </div>
-                    <p>Video ini memberikan pengenalan dasar tentang Laravel. Kamu akan belajar tentang framework PHP ini, termasuk fitur-fitur utamanya dan bagaimana cara mengatur proyek Laravel pertama kamu.</p>
+                    <p>Video ini menjelaskan apa itu JavaScript, termasuk dasar-dasar dan kegunaannya dalam pengembangan web.</p>
                      <p><strong>Di dalam video ini, kamu akan mempelajari:</strong></p>
                     <ul>
-                        <li>Pengertian Laravel dan keunggulannya sebagai framework PHP.</li>
-                        <li>Langkah-langkah awal untuk memulai dengan Laravel.</li>
-                        <li>Pengaturan lingkungan pengembangan untuk Laravel.</li>
+                        <li>Pengertian JavaScript dan sejarahnya.</li>
+                        <li>Bagaimana JavaScript digunakan dalam pengembangan web modern.</li>
+                        <li>Peran JavaScript dalam interaktivitas dan dinamika halaman web.</li>
                     </ul>
                 </div>
             </div>
@@ -45,25 +42,22 @@
         <div class="video-description p-3 shadow my-4">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <iframe class="video-frame" src="https://www.youtube.com/embed/Ocm57X-BucM" title="YouTube video"
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/H5ezVh3kuhI" title="YouTube video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-12">
                     <div class="row align-items-center">
                         <div class="col-md-10">
-                            <h3>STEP 2 - INSTALASI DAN MENJALANKAN LARAVEL</h3>
-                        </div>
-                        <div class="col-md-2 text-end">
-                            <i class="fa-solid fa-circle-info fa-2x" data-bs-toggle="tooltip" data-bs-title="Ini Hanya Video Contoh"></i>
+                            <h3>2. Instalasi Chrome dan VSCode</h3>
                         </div>
                     </div>
-                    <p>Latihan ini akan membahas cara menginstal Laravel dan memulai proyek Laravel. Kamu akan belajar cara menggunakan Composer untuk instalasi, serta bagaimana menjalankan aplikasi Laravel di lingkungan lokal.</p>
+                    <p>Video ini akan memandu kamu melalui proses instalasi Google Chrome dan Visual Studio Code, dua alat penting untuk pengembangan web.</p>
                      <p><strong>Di dalam video ini, kamu akan mempelajari:</strong></p>
                     <ul>
-                        <li>Proses instalasi Laravel menggunakan Composer.</li>
-                        <li>Menjalankan server pengembangan lokal untuk aplikasi Laravel.</li>
-                        <li>Memahami struktur direktori dasar dalam proyek Laravel.</li>
+                        <li>Cara mengunduh dan menginstal Google Chrome di sistem operasimu.</li>
+                        <li>Cara mengunduh dan menginstal Visual Studio Code (VSCode), editor kode yang populer.</li>
+                        <li>Pengaturan awal VSCode untuk memudahkan pengembangan web dengan JavaScript.</li>
                     </ul>
                 </div>
             </div>
@@ -73,30 +67,26 @@
         <div class="video-description p-3 shadow my-4">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <iframe class="video-frame" src="https://www.youtube.com/embed/8j2f3lVeLsk" title="YouTube video"
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/BN6fyGVf5A4" title="YouTube video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-12">
                     <div class="row align-items-center">
                         <div class="col-md-10">
-                            <h3>STEP 3 - MODEL DAN MIGRASI LARAVEL</h3>
-                        </div>
-                        <div class="col-md-2 text-end">
-                            <i class="fa-solid fa-circle-info fa-2x" data-bs-toggle="tooltip" data-bs-title="Ini Hanya Video Contoh"></i>
+                            <h3>3. Menjalankan JavaScript</h3>
                         </div>
                     </div>
-                    <p>Di video ini, kamu akan mempelajari tentang model dan migrasi di Laravel. Kamu akan memahami bagaimana cara membuat dan mengelola tabel basis data menggunakan migrasi serta bagaimana menggunakan model Eloquent untuk berinteraksi dengan tabel-tabel tersebut.</p>
+                    <p>Di video ini, kamu akan belajar cara menjalankan JavaScript di berbagai lingkungan, termasuk di browser dan editor kode.</p>
                      <p><strong>Di dalam video ini, kamu akan mempelajari:</strong></p>
                     <ul>
-                        <li>Cara membuat dan mengelola migrasi di Laravel.</li>
-                        <li>Definisi dan penggunaan model Eloquent untuk menangani data dalam basis data.</li>
-                        <li>Hubungan antara model dan tabel basis data di Laravel.</li>
+                        <li>Cara menulis dan menjalankan kode JavaScript di konsol browser.</li>
+                        <li>Menjalankan JavaScript langsung dalam file HTML.</li>
+                        <li>Tips dan trik untuk debugging kode JavaScript menggunakan alat pengembang di browser.</li>
                     </ul>
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

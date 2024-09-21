@@ -41,10 +41,11 @@ header.scrolled {
 }
 
 .nav-items li a {
-  color: white;
+  color: #f9f9f9;
   text-decoration: none;
   padding: 8px 16px;
   transition: background-color 0.3s;
+  text-shadow: 2px 0px 9px rgba(66, 68, 90, 1);
 }
 
 .nav-items li a:hover {

@@ -20,7 +20,7 @@ const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal with a transition
 btn.onclick = function() {
-  modal.style.display = "block";  // First, make it display:block
+  modal.style.display = "flex";  // First, make it display:block
   setTimeout(() => { // Add show class after a slight delay to allow transition
     modal.classList.add('show');
   }, 5); // Short delay to ensure transition triggers
