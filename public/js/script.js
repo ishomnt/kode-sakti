@@ -12,8 +12,10 @@ window.onscroll = function () {
 // Get modal element
 const modalVideo = document.getElementById("modal-video");
 const modalMateri = document.getElementById("modal-materi");
+const modalQuiz = document.getElementById("modal-quiz");
 const btnVideo = document.getElementById("btn-video");
 const btnMateri = document.getElementById("btn-materi");
+const btnQuiz = document.getElementById("btn-quiz");
 const span = document.getElementsByClassName("close")[0];
 
 btnVideo.onclick = function() {
@@ -30,18 +32,33 @@ btnMateri.onclick = function() {
   }, 5);
 }
 
-span.onclick = function() {
-  modal.classList.remove('show');
+btnQuiz.onclick = function() {
+  modalQuiz.style.display = "flex";
   setTimeout(() => {
-    modal.style.display = "none";
+    modalQuiz.classList.add('show');
+  }, 5);
+}
+
+span.onclick = function() {
+  modalVideo.classList.remove('show');
+  modalMateri.classList.remove('show');
+  modalQuiz.classList.remove('show');
+  setTimeout(() => {
+    modalVideo.style.display = "none";
+    modalMateri.style.display = "none";
+    modalQuiz.style.display = "none";
   }, 200);
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.classList.remove('show');
+  if (event.target == modalVideo || event.target == modalMateri || event.target == modalQuiz) {
+    modalVideo.classList.remove('show');
+    modalMateri.classList.remove('show');
+    modalQuiz.classList.remove('show');
     setTimeout(() => {
-      modal.style.display = "none";
+        modalVideo.style.display = "none";
+        modalMateri.style.display = "none";
+        modalQuiz.style.display = "none";
     }, 200);
   }
 }

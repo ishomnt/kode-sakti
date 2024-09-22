@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\MateriController;
+use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -17,3 +18,4 @@ Route::get('komunitas', function () {
     return view('komunitas.index');
 })->name('komunitas');
 
+Route::get('/quiz', function(){return view('pages.quiz.index');})->name('quiz');

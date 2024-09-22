@@ -71,7 +71,7 @@
         <button class="menu-btn" id="btn-materi">
             <iconify-icon icon="icon-park:book" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >MATERI</span>
         </button>
-        <button class="menu-btn" id="openModalBtn">
+        <button class="menu-btn" id="btn-quiz">
             <iconify-icon icon="emojione:pen" width="1.5em" height="1.5em"></iconify-icon><span class="text-sm" >LATIHAN SOAL</span>
         </button>
         <a href="{{ route('komunitas') }}" class="menu-btn">
@@ -99,6 +99,19 @@
         <span class="close">&times;</span>
         <div class="button-grid">
             <a href="{{ route('materi', ['materi' => 'materi-html']) }}" class="btn-modal">HTML</a>
+            <a href="{{ route('materi', ['materi' => 'materi-css']) }}" class="btn-modal">CSS</a>
+            <a href="{{ route('materi', ['materi' => 'materi-javascript']) }}" class="btn-modal">JavaScript</a>
+            <a href="{{ route('materi', ['materi' => 'materi-php']) }}" class="btn-modal">PHP</a>
+          </div>
+    </div>
+</div>
+
+{{-- Modal Quiz --}}
+<div id="modal-quiz" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="button-grid">
+            <a href="{{ route('quiz') }}" class="btn-modal">HTML</a>
             <a href="{{ route('materi', ['materi' => 'materi-css']) }}" class="btn-modal">CSS</a>
             <a href="{{ route('materi', ['materi' => 'materi-javascript']) }}" class="btn-modal">JavaScript</a>
             <a href="{{ route('materi', ['materi' => 'materi-php']) }}" class="btn-modal">PHP</a>
