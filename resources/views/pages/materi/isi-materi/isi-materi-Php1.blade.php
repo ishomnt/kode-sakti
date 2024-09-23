@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial #01: Pengenalan Dasar Pemrograman PHP</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
-<body>
+@extends('pages.materi.isi-materi.main-materi')
+@section('title', 'Isi Materi PHP #1')
+@section('content-isimateri')
     <div class="container">
         <header>
             <div class="article-meta">
@@ -91,18 +85,17 @@ echo "Hello, World!";
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php2']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami
             </a>
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php3']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial PHP #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data
             </a>
         </div>
     </div>
-</body>
-</html>
+@endsection

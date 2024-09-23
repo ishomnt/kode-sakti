@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial CSS #01: Pengenalan Dasar CSS untuk Pemula</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
-<body>
+@extends('pages.materi.isi-materi.main-materi')
+@section('title', 'Isi Materi CSS #1')
+@section('content-isimateri')
     <div class="container">
         <header>
             <div class="article-meta">
@@ -80,19 +74,17 @@
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-css2']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial CSS #02: Cara Menulis CSS di HTML
             </a>
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-css3']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial CSS #03: Sintaks Dasar CSS yang Harus Dipahami
             </a>
         </div>
     </div>
-
-</body>
-</html>
+@endsection
