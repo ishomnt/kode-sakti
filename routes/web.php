@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('master.index');
-});
+})->name('main');
 
 Route::get('/video/{video}', [VideoController::class, 'show'])->name('video');
 
