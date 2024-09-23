@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial Berita</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
-<body>
+@extends('pages.materi.isi-materi.main-materi')
+@section('title', 'Isi Materi HTML #1')
+@section('content-isimateri')
     <div class="container">
         <header>
             <div class="article-meta">
@@ -149,31 +143,18 @@
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-html2']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial HTML #02: Mengenal Tag, Elemen, dan Atribut dalam HTML
             </a>
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-html3']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial HTML #03: Membuat Paragraf di HTML
             </a>
         </div>
     </div>
 
-
-    <script>
-        function copyCode(button) {
-            const code = button.nextElementSibling.innerText;
-            navigator.clipboard.writeText(code).then(() => {
-                button.innerText = "Code berhasil disalin!";
-                setTimeout(() => {
-                    button.innerText = "Salin";
-                }, 2000);
-            });
-        }
-    </script>
-</body>
-</html>
+@endsection

@@ -12,17 +12,17 @@
     <hr>
     <div class="tutorial-list">
         <div class="tutorial-item">
-            <a href="tutorial-js-01.html">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-JavaScript1']) }}">
                 <span class="icon">📄</span> Tutorial JavaScript #01: Pengenalan Dasar JavaScript
             </a>
         </div>
         <div class="tutorial-item">
-            <a href="tutorial-js-02.html">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-JavaScript2']) }}">
                 <span class="icon">📄</span> Tutorial JavaScript #02: 4 Cara Menampilkan Output Pada JavaScript
             </a>
         </div>
         <div class="tutorial-item">
-            <a href="tutorial-js-03.html">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-JavaScript3']) }}">
                 <span class="icon">📄</span> Tutorial JavaScript #03: Memahami Variabel Dan Tipe Data Dalam JavaScript
             </a>
         </div>

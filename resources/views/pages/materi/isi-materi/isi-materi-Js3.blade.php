@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial #03: Memahami Variabel dan Tipe Data dalam JavaScript</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
+@extends('pages.materi.isi-materi.main-materi')
+@section('title', 'Isi Materi JavaScript #3')
+@section('content-isimateri')
 <body>
     <div class="container">
         <header>
@@ -146,37 +141,25 @@ var umur1 = 30; // Valid
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item">
-            <a href="#" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-JavaScript1']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial JavaScript #01: Pengenalan Dasar JavaScript
             </a>
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-JavaScript2']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial JavaScript #02: 4 Cara Menampilkan Output pada JavaScript
             </a>
         </div>
 
         <div class="list-item checked">
-            <a href="" class="list-link">
+            <a href="#" class="list-link">
                 <span class="icon">&#x2714;</span>
                 Tutorial JavaScript #03: Memahami Variabel dan Tipe Data dalam JavaScript
             </a>
         </div>
     </div>
 
-    <script>
-        function copyCode(button) {
-            const code = button.nextElementSibling.innerText;
-            navigator.clipboard.writeText(code).then(() => {
-                button.innerText = "Code berhasil disalin!";
-                setTimeout(() => {
-                    button.innerText = "Salin";
-                }, 2000);
-            });
-        }
-    </script>
-</body>
-</html>
+    @endsection

@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
-<body>
+@extends('pages.materi.isi-materi.main-materi')
+@section('title', 'Isi Materi PHP #3')
+@section('content-isimateri')
     <div class="container">
         <header>
             <div class="article-meta">
@@ -153,36 +147,24 @@ unset($nama); // Menghapus variabel $nama dari memori
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item ">
-            <a href="#" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php1']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial PHP #01: Pengenalan Dasar Pemrograman PHP
             </a>
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php2']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami
             </a>
         </div>
 
         <div class="list-item checked">
-            <a href="" class="list-link">
+            <a href="#" class="list-link">
                 <span class="icon">&#x2714;</span>
                 Tutorial PHP #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data
             </a>
         </div>
     </div>
-    <script>
-        function copyCode(button) {
-            const code = button.nextElementSibling.innerText;
-            navigator.clipboard.writeText(code).then(() => {
-                button.innerText = "Code berhasil disalin!";
-                setTimeout(() => {
-                    button.innerText = "Salin";
-                }, 2000);
-            });
-        }
-    </script>
-</body>
-</html>
+@endsection
