@@ -18,4 +18,5 @@ Route::get('komunitas', function () {
     return view('komunitas.index');
 })->name('komunitas');
 
-Route::get('/quiz', function(){return view('pages.quiz.index');})->name('quiz');
+Route::get('/quiz/{quiz}', [QuizController::class, 'show'])->name('quiz');
+Route::get('/score', function(){return view('pages.quiz.score');})->name('score');
