@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.popular-title {
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.desc-title {
+    color: #9ba8b7;
+    margin-bottom: 20px;
+}
+
+.card-row, .card-row-all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CSS untuk .card */
+.card {
+    display: flex;
+    align-items: center; /* Menyelaraskan konten vertikal di tengah */
+    background-color: #fff;
+    border-radius: 8px;
+    width: 48%;  /* Mengurangi lebar untuk memungkinkan dua card bersampingan */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Atur teks menjadi rata kiri */
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px; /* Jarak antara gambar dan teks */
+}
+
+.card h3 {
+    color: #000;
+    margin: 0;
+    font-size: 14px;
+}
+
+.card p {
+    color: #000;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Media Queries untuk .card agar responsif */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;  /* Pada layar lebih kecil, buat card mengambil 100% lebar */
+    }
+}
+
+/* CSS untuk .card-all */
+.card-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    border-radius: 8px;
+    width: 100%;  /* Lebar penuh untuk .card-all */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    color: 000;
+}
+
+/* Bagian kiri yang memuat gambar dan teks utama */
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.left-content img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.left-content h3 {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.left-content p {
+    color: #9ba8b7;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Bagian kanan yang memuat informasi tambahan (platform, artikel, level) */
+.right-content {
+    text-align: left;
+}
+
+.right-content p {
+    margin: 5px 0;
+    color: #40c3c2;
+    font-size: 14px;
+}
+
+.right-content i {
+    margin-right: 5px;
+    color: #40c3c2; /* Warna ikon */
+}
+
+/* Media Queries untuk tata letak responsif */
+@media (max-width: 768px) {
+    .card-all {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .right-content p,
+    .right-content i {
+        display: none;
+    }
+
+    .right-content {
+        display: block;
+    }
+
+    .left-content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-content img {
+        margin-right: 15px;
+    }
+
+    .left-content h3,
+    .left-content p {
+        padding: 20px;
+        text-align: center;
+    }
+}

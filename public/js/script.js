@@ -10,36 +10,55 @@ window.onscroll = function () {
 };
 
 // Get modal element
-const modal = document.getElementById("myModal");
-
-// Get button that opens the modal
-const btn = document.getElementById("openModalBtn");
-
-// Get the <span> element that closes the modal
+const modalVideo = document.getElementById("modal-video");
+const modalMateri = document.getElementById("modal-materi");
+const modalQuiz = document.getElementById("modal-quiz");
+const btnVideo = document.getElementById("btn-video");
+const btnMateri = document.getElementById("btn-materi");
+const btnQuiz = document.getElementById("btn-quiz");
 const span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal with a transition
-btn.onclick = function() {
-  modal.style.display = "flex";  // First, make it display:block
-  setTimeout(() => { // Add show class after a slight delay to allow transition
-    modal.classList.add('show');
-  }, 5); // Short delay to ensure transition triggers
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.classList.remove('show');  // Remove the show class
+btnVideo.onclick = function() {
+  modalVideo.style.display = "flex";
   setTimeout(() => {
-    modal.style.display = "none";  // Hide after transition is complete
-  }, 200); // Match the CSS transition time
+    modalVideo.classList.add('show');
+  }, 5);
 }
 
-// When the user clicks anywhere outside of the modal, close it
+btnMateri.onclick = function() {
+  modalMateri.style.display = "flex";
+  setTimeout(() => {
+    modalMateri.classList.add('show');
+  }, 5);
+}
+
+btnQuiz.onclick = function() {
+  modalQuiz.style.display = "flex";
+  setTimeout(() => {
+    modalQuiz.classList.add('show');
+  }, 5);
+}
+
+span.onclick = function() {
+  modalVideo.classList.remove('show');
+  modalMateri.classList.remove('show');
+  modalQuiz.classList.remove('show');
+  setTimeout(() => {
+    modalVideo.style.display = "none";
+    modalMateri.style.display = "none";
+    modalQuiz.style.display = "none";
+  }, 200);
+}
+
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.classList.remove('show');
+  if (event.target == modalVideo || event.target == modalMateri || event.target == modalQuiz) {
+    modalVideo.classList.remove('show');
+    modalMateri.classList.remove('show');
+    modalQuiz.classList.remove('show');
     setTimeout(() => {
-      modal.style.display = "none";
+        modalVideo.style.display = "none";
+        modalMateri.style.display = "none";
+        modalQuiz.style.display = "none";
     }, 200);
   }
 }
