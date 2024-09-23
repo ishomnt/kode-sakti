@@ -24,10 +24,11 @@
                     <div class="about-container">
                         <div class="about-content">
                             <div class="about-text">
-                                <h2 class="about-title">Tentang</h2>
+                                <h2 class="heading2">Tentang</h2>
                                 <p class="about-description">
                                     Belajar Coding, yang didirikan pada 20 September 2024, adalah platform terbaik untuk mempelajari pemrograman dan teknologi. Misi kami adalah membantu individu, baik pemula maupun yang sudah berpengalaman, mengembangkan keterampilan coding mereka melalui tutorial praktis, pelajaran interaktif, dan kolaborasi komunitas.
                                 </p>
+
                             </div>
                             <div class="about-image">
                                 <img src="{{ asset('image/awal1.png') }}" alt="Tim Belajar Coding">
@@ -37,26 +38,26 @@
                 </section>
 
                 <section class="services-section">
-                    <h2 class="services-title">Layanan Kami</h2>
+                    <h2 class="heading">Layanan Kami</h2>
                     <p class="services-intro">Kami menyediakan berbagai layanan inovatif untuk membantu Anda menguasai dunia pemrograman dan teknologi.</p>
                     <div class="services-container">
                         <div class="service-card">
                             <h3 class="service-title">
-                                <iconify-icon icon="mdi:code-tags" style="color: #1e3a8a;"></iconify-icon>
+                                <iconify-icon icon="mdi:code-tags" style="color: #1b3c83;"></iconify-icon>
                                 Kursus Pemrograman
                             </h3>
                             <p class="service-description">Kami menawarkan kursus pemrograman dari dasar hingga tingkat lanjut, mencakup berbagai bahasa pemrograman seperti HTML, CSS, PHP dan JavaScript. Bergabunglah untuk mempelajari keterampilan yang diperlukan di dunia teknologi saat ini.</p>
                         </div>
                         <div class="service-card">
                             <h3 class="service-title">
-                                <iconify-icon icon="mdi:book-open-page-variant" style="color: #1e3a8a;"></iconify-icon>
+                                <iconify-icon icon="mdi:book-open-page-variant" style="color: #1b3c83;"></iconify-icon>
                                 Tutorial Interaktif
                             </h3>
                             <p class="service-description">Nikmati pengalaman belajar yang menyenangkan dengan tutorial interaktif kami. Dengan berbagai tantangan dan proyek, Anda akan dapat mengasah keterampilan coding sambil bersenang-senang.</p>
                         </div>
                         <div class="service-card">
                             <h3 class="service-title">
-                                <iconify-icon icon="mdi:account-group" style="color: #1e3a8a;"></iconify-icon>
+                                <iconify-icon icon="mdi:account-group" style="color: #1b3c83;"></iconify-icon>
                                 Komunitas Coding
                             </h3>
                             <p class="service-description">Bergabunglah dengan komunitas coding kami untuk berdiskusi, berbagi pengalaman, dan belajar dari satu sama lain. Temukan mentor, teman belajar, dan tingkatkan keterampilan Anda bersama-sama.</p>
@@ -66,7 +67,7 @@
 
                 <section class="faq-section">
                     <div class="container">
-                        <h2 class="faq-title">Pertanyaan yang sering ditanyakan</h2>
+                        <h2 class="heading2">Pertanyaan yang sering ditanyakan</h2>
                         <p class="faq-subtitle">Pertanyaan yang sering ditanyakan tentang Belajar Coding, dari mulai pertanyaan tentang kursus, produk, dan layanan yang kami tawarkan.</p>
 
                         <div class="faq-grid">

@@ -1,14 +1,14 @@
 @extends('pages.materi.isi-materi.main-materi')
 @section('title', 'Isi Materi JavaScript #1')
 @section('content-isimateri')
-    <div class="container">
-        <header>
+
+        <header1>
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
             <h1 class="article-title">Tutorial JavaScript #01: Pengenalan Dasar JavaScript</h1>
             <hr class="title-underline">
-        </header>
+        </header1>
 
         <div class="article-image">
             <img src="{{ asset('image/js.webp') }}" alt="Gambar Pengenalan JavaScript">
@@ -122,8 +122,8 @@ javascript:alert('Halo dari URL!');
                 <em>Pemahaman tentang JavaScript adalah kunci untuk menciptakan aplikasi web yang interaktif dan dinamis!</em>
             </p>
         </div>
-    </div>
-    <div class="container2">
+
+    @section('content-isimateri2')
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item checked">
@@ -146,6 +146,6 @@ javascript:alert('Halo dari URL!');
                 Tutorial JavaScript #03: Memahami Variabel dan Tipe Data dalam JavaScript
             </a>
         </div>
-    </div>
 
+@endsection
     @endsection

@@ -1,14 +1,13 @@
 @extends('pages.materi.isi-materi.main-materi')
 @section('title', 'Isi Materi CSS #2')
 @section('content-isimateri')
-    <div class="container">
-        <header>
+        <header1>
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
             <h1 class="article-title">Tutorial CSS #02: Cara Menulis CSS di HTML</h1>
             <hr class="title-underline">
-        </header>
+        </header1>
 
         <div class="article-image">
             <img src="{{ asset('image/css.webp') }}" alt="Gambar Tutorial CSS">
@@ -95,8 +94,8 @@ h1 {
                 <em>Pemahaman cara menulis CSS akan membantu Anda menciptakan halaman web yang lebih menarik dan fungsional!</em>
             </p>
         </div>
-    </div>
-    <div class="container2">
+
+    @section('content-isimateri2')
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item">
@@ -119,6 +118,6 @@ h1 {
                 Tutorial CSS #03: Sintaks Dasar CSS yang Harus Dipahami
             </a>
         </div>
-    </div>
 
+@endsection
 @endsection

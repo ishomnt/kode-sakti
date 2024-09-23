@@ -1,14 +1,13 @@
 @extends('pages.materi.isi-materi.main-materi')
 @section('title', 'Isi Materi HTML #2')
 @section('content-isimateri')
-    <div class="container">
-        <header>
+        <header1>
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
             <h1 class="article-title">Tutorial HTML #02: Apa itu Tag, Elemen, dan Atribut dalam HTML?</h1>
             <hr class="title-underline">
-        </header>
+        </header1>
 
         <div class="article-image">
             <img src="{{ asset('image/html1.webp') }}" alt="Gambar Berita">
@@ -124,7 +123,7 @@
             </p>
         </div>
     </div>
-    <div class="container2">
+    @section('content-isimateri2')
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item">
@@ -147,5 +146,5 @@
                 Tutorial HTML #03: Membuat Paragraf di HTML
             </a>
         </div>
-    </div>
+@endsection
 @endsection

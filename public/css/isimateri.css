@@ -7,15 +7,13 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.4;
-    background-color: #f4f4f4;
-    margin-top: 20px;
 }
 
-.container {
+.container1 {
     max-width: 1200px;
     margin: 10px auto;
     padding: 40px;
-    background-color: #fff;
+    margin-top: 80px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
@@ -72,7 +70,6 @@ body {
     margin-bottom: 15px;
 }
 
-
 .article-content h1,
 .article-content h2,
 .article-content h3 {
@@ -106,7 +103,6 @@ pre {
     margin: 0;
 }
 
-/* Daftar */
 .article-content ul {
     margin-left: 30px;
     padding-left: 0;
@@ -123,16 +119,13 @@ code {
     font-family: 'Courier New', Courier, monospace;
 }
 
-
-.container2 {
-    max-width: 1200px;
-    margin: 30px auto;
+.content1 {
+    margin: 30px 100px 50px 100px;
     padding: 40px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
-
 
 .list-item {
     padding: 10px;
@@ -145,14 +138,14 @@ code {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.h2container{
+.h2container1 {
     margin-bottom: 10px;
 }
+
 .list-link {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
-
 
 .list-item:last-child {
     border-bottom: none;
@@ -165,19 +158,21 @@ code {
 }
 
 .checked {
-    background-color: #00a896;
+    background-color: #1e3a8a;
     color: white;
-    padding-right: 20px; /* Add right padding for spacing */
+    padding-right: 20px;
 }
 
 .list-item.checked .icon {
     color: white;
 }
 
-@media (max-width: 768px) {
-    .container2 {
-        padding: 20px 20px; /* Adjust the padding to add space on the left and right */
-        margin: 0 15px;     /* Add some margin for both left and right */
+@media (max-width: 1200px) {
+    .content1 {
+        padding: 20px 20px;
+        margin: 15px;
+        margin-bottom: 40px;
+        margin-top: 30px;
     }
 
     .list-item {
@@ -191,9 +186,11 @@ code {
 }
 
 @media (max-width: 576px) {
-    .container2 {
+    .content1 {
         padding: 20px 20px;
-        margin: 0 10px; /* Add margin to both left and right for a tighter layout */
+        margin: 10px;
+        margin-bottom: 30px;
+        margin-top: 20px;
     }
 
     .list-item {
@@ -206,11 +203,8 @@ code {
     }
 }
 
-
-
-
 @media (max-width: 1200px) {
-    .container {
+    .container1 {
         padding: 30px;
     }
 
@@ -220,7 +214,7 @@ code {
 }
 
 @media (max-width: 1000px) {
-    .container {
+    .container1 {
         padding: 20px;
         margin: 10px;
     }
@@ -243,7 +237,7 @@ code {
         font-size: 1rem;
     }
 
-    .container {
+    .container1 {
         padding: 20px;
     }
 
@@ -258,7 +252,7 @@ code {
 }
 
 @media (max-width: 576px) {
-    .container {
+    .container1 {
         padding: 20px 30px;
     }
 
