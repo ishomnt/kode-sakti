@@ -2,10 +2,10 @@
     <nav class="navbar">
         <a href="" class="logo"><img src="{{ asset('image/Logo BeCo.png') }}" class="logo-img" alt=""></a>
         <ul class="nav-items">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#faq">FAQ</a></li>
         </ul>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
@@ -13,10 +13,10 @@
     </nav>
     <div class="mobile-menu">
         <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#faq">FAQ</a></li>
         </ul>
     </div>
 </header>

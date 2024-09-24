@@ -10,6 +10,8 @@ class MateriController extends Controller
     {
         // Cek topik yang diklik dan arahkan ke view yang sesuai
         switch($materi) {
+            case 'semua-materi':
+                return view('pages.materi.materi-index');
             case 'materi-html':
                 return view('pages.materi.materi-html');
             case 'materi-javascript':
