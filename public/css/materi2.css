@@ -1,11 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-
 .container {
     width: 75%;
     margin: 50px auto;
@@ -68,4 +60,59 @@ hr {
 
 .tutorial-item a:hover {
     background-color: #ececec;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Lebar lebih lebar untuk layar kecil */
+        padding: 15px; /* Mengurangi padding */
+        display: flex; /* Tambahkan display flex */
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        align-items: center; /* Mengatur alignment ke tengah */
+    }
+
+    .tutorial-header {
+        display: flex; /* Tambahkan display flex */
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        align-items: center; /* Mengatur alignment ke tengah */
+        text-align: center; /* Menyelaraskan teks ke tengah */
+    }
+
+    .tutorial-image {
+        width: 100%; /* Atur lebar gambar menjadi 80% dari kontainer */
+        max-width: 150px; /* Batas maksimum lebar gambar */
+        height: auto; /* Mengatur tinggi otomatis */
+        margin-bottom: 15px;
+    margin-right: 20px;
+
+    }
+
+    .tutorial-text h1 {
+        font-size: 1.5rem; /* Mengurangi ukuran font */
+    }
+
+    .tutorial-text p {
+        font-size: 1rem; /* Mengurangi ukuran font */
+    }
+
+    .tutorial-item a {
+        font-size: 1rem; /* Mengurangi ukuran font */
+        padding: 12px; /* Mengurangi padding */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .tutorial-text h1 {
+        font-size: 1.2rem; /* Ukuran font lebih kecil */
+    }
+
+    .tutorial-text p {
+        font-size: 0.9rem; /* Ukuran font lebih kecil */
+    }
+
+    .tutorial-item a {
+        font-size: 0.9rem; /* Ukuran font lebih kecil */
+    }
 }

@@ -16,10 +16,10 @@
         <div class="footer-col">
           <h4 class="text-primary">Navigasi</h4>
           <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Kontak</a></li>
-            <li><a href="#">Layanan</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
 

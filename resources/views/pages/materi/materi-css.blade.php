@@ -1,6 +1,7 @@
 @extends('pages.materi.main-materi')
 @section('title', 'Materi CSS Dasar')
 @section('content-materi')
+    <h2 class="section-title">Materi CSS</h2>
     <div class="tutorial-header">
         <img src="{{ asset('image/css2.png') }}" alt="Tutorial Image" class="tutorial-image">
         <div class="tutorial-text">
