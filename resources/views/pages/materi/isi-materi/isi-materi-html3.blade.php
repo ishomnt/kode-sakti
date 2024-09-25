@@ -1,14 +1,14 @@
 @extends('pages.materi.isi-materi.main-materi')
 @section('title', 'Isi Materi HTML #3')
 @section('content-isimateri')
-    <div class="container">
-        <header>
+
+        <header1>
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
             <h1 class="article-title">Tutorial HTML #03: Membuat Paragraf pada HTML</h1>
             <hr class="title-underline">
-        </header>
+        </header1>
         <div class="article-image">
             <img src="{{ asset('image/html1.webp') }}" alt="Gambar Berita">
         </div>
@@ -88,8 +88,8 @@ dengan format pra.
                 Dengan memahami cara membuat dan memformat paragraf dalam HTML, Anda dapat menyusun konten yang lebih teratur dan mudah dibaca. Selanjutnya, Anda dapat Tutorial tentang elemen lain dalam HTML untuk memperkaya konten Anda.
             </p>
         </div>
-    </div>
-    <div class="container2">
+
+    @section('content-isimateri2')
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item">
@@ -112,6 +112,5 @@ dengan format pra.
                 Tutorial HTML #03: Membuat Paragraf di HTML
             </a>
         </div>
-    </div>
-
+@endsection
 @endsection

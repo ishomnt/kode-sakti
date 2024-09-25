@@ -20,6 +20,10 @@
     flex-wrap: wrap;
 }
 
+.about-text h2{
+    margin-bottom: 15px;
+}
+
 .about-text {
     flex: 1;
     text-align: left;
@@ -37,21 +41,16 @@
 .about-image img {
     max-width: 100%;
     height: auto;
-    max-height: 350px;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-title {
-    font-size: 3em;
-    font-weight: 700;
-    color: #1e3a8a;
-    margin-bottom: 20px;
-}
+
 
 .about-description {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
@@ -118,12 +117,12 @@
 .services-title {
     font-size: 2.5em;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #1b3c83;
     margin: 20px 0;
 }
 
 .services-intro {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #7d7575;
     margin: 20px auto;
     max-width: 800px;
@@ -213,14 +212,14 @@
 }
 
 .faq-title {
-    font-size: 2.3em;
+    font-size: 1.8em;
     font-weight: 700;
     color: #1e3a8a;
     margin-bottom: 10px;
 }
 
 .faq-subtitle {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #7d7575;
     margin-bottom: 30px;
 }
@@ -234,7 +233,13 @@
     display: none;
 }
 
+.faq-card h3{
+    font-size: 1em;
+}
 
+.faq-card p{
+    font-size: 0.9em;
+}
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

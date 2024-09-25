@@ -59,6 +59,7 @@
       </div>
 
       <div class="footer-bottom">
+        <p style="text-align: left;"><span style="color: red;">* </span>Video yang terlibat pada project ini hanya merupakan contoh dan bersifat sementara</p>
         <hr class="footer-line">
         <p>&copy; <span id="current-year"></span> Website Anda. All rights reserved.</p>
       </div>

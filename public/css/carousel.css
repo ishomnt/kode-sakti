@@ -42,6 +42,7 @@
     font-size: 2em;
     margin: 0;
     line-height: 1.2;
+    margin-bottom:20px ;
 }
 
 .slider .list .item .content p:nth-child(1) {
@@ -50,8 +51,8 @@
 }
 
 .slider .list .item .content p:nth-child(3) {
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 1.3em;
+    line-height: 1.2;
 }
 
 .slider .list .item.active {

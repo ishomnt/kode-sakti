@@ -13,7 +13,9 @@ body {
 .container {
     width: 75%;
     margin: 0 auto;
+    margin-top: 70px;
     padding-top: 20px;
+    margin-bottom: 40px;
 }
 
 .popular-title {
@@ -123,7 +125,7 @@ body {
 
 .right-content i {
     margin-right: 5px;
-    color: #40c3c2; /* Warna ikon */
+    color: #1e3a8a; /* Warna ikon */
 }
 
 /* Media Queries untuk tata letak responsif */
