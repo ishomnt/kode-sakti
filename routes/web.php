@@ -5,6 +5,7 @@ use App\Http\Controllers\MateriController;
 use App\Http\Controllers\IsiMateriController;
 use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CodeController;
 
 
 Route::get('/', function () {
@@ -22,3 +23,4 @@ Route::get('komunitas', function () {
 })->name('komunitas');
 
 Route::get('/quiz', function(){return view('pages.quiz.index');})->name('quiz');
+Route::get('/execute-code', [CodeController::class, 'executeCode']);
