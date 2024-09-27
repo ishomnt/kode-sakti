@@ -3,55 +3,67 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4 );
     padding: 20px;
-    margin: 30px 100px 40px 100px;
+    margin: 40px 100px 40px 100px;
 }
 
-.textarea-container {
-    width: 100%;
-}
 
 textarea {
     width: 100%;
     height: 400px;
     padding: 10px;
     font-family: monospace;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 4px;
     resize: none;
 }
 
+.CodeMirror {
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+#outputFrame {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+}
+
+.run{
+    margin-top: 10px;
+}
+
 .run {
     padding: 10px 20px;
-    background-color: #1e3a8a;
+    background-color: #1b3c83;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
     border-radius: 4px;
     transition: background-color 0.3s;
-    margin-top: 10px;
-    width: 100%;
 }
 
+
+
 .run:hover {
-    background-color: #1e3a8a;
+    background-color: #0056b3;
 }
 
 iframe {
     width: 100%;
     height: 400px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
+    margin-top: 20px;
     background-color: white;
     border-radius: 4px;
 }
 
 .output-title {
-    background-color: #1e3a8a;
+    background-color: #1b3c83;
     color: white;
     padding: 10px;
     border-radius: 4px 4px 0 0;
     text-align: center;
-    margin-top: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -61,16 +73,20 @@ iframe {
 
     textarea {
         height: 300px;
-    }
-
-    iframe {
-        height: 300px;
+        margin-bottom: 10px;
     }
 
     .run {
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        height: 300px;
+        margin-top: 10px;
     }
 }
+
 
 @media (max-width: 576px) {
     textarea {
@@ -79,5 +95,11 @@ iframe {
 
     iframe {
         height: 250px;
+        margin-top: 10px;
+    }
+
+    .run {
+        margin-bottom: 20px;
     }
 }
+

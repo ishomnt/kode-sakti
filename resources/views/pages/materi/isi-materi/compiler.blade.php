@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/theme/default.min.css">
     <link rel="stylesheet" href="{{ asset('css/compiler.css')}}">
+
 </head>
 <body>
 
@@ -21,10 +24,25 @@
         </div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/javascript/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/css/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/xml/xml.min.js"></script>
 
 <script>
+
+    var editor = CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
+        mode: "text/html",
+        theme: "default",
+        lineNumbers: true,
+        matchBrackets: true,
+        autoCloseBrackets: true,
+        autoCloseTags: true
+    });
+
+
     function runCode() {
-        var fullCode = document.getElementById("codeEditor").value;
+        var fullCode = editor.getValue();
 
         var cssCode = fullCode.match(/<style[^>]*>([\s\S]*?)<\/style>/i);
         cssCode = cssCode ? "<style>" + cssCode[1] + "</style>" : "";
