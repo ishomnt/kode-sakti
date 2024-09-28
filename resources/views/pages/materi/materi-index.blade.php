@@ -1,5 +1,5 @@
 @extends('pages.materi.main-materi')
-@section('title', 'Materi HTML Dasar')
+@section('title', 'Pilih Materi Favorit')
 @section('content-materi')
     <style>
         a {

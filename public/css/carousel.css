@@ -256,7 +256,7 @@
 }
 
 /* The close button */
-.close {
+.close, .close1, .close2 {
     color: #aaa;
     position: absolute;
     right: 20px;
@@ -266,8 +266,8 @@
     cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close1:hover, .close2:hover,
+.close:focus, .close1:focus, .close2:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;

@@ -16,10 +16,26 @@
             </li>
 
             <!-- Materi Dropdown -->
-            <li><a href="{{ asset('materi/semua-materi') }}">Materi</a></li>
+            <li class="custom-dropdown">
+                <a href="{{ asset('materi/semua-materi') }}">Materi</a>
+                <ul class="custom-dropdown-menu">
+                    <li><a href="{{ route('materi', ['materi' => 'materi-html']) }}">Materi HTML</a></li>
+                    <li><a href="{{ route('materi', ['materi' => 'materi-css']) }}">Materi CSS</a></li>
+                    <li><a href="{{ route('materi', ['materi' => 'materi-javascript']) }}">Materi JS</a></li>
+                    <li><a href="{{ route('materi', ['materi' => 'materi-php']) }}">Materi PHP</a></li>
+                </ul>
+            </li>
 
-            <li><a href="#">Latihan Soal</a></li>
-            <li><a href="#">Komunitas</a></li>
+            <li class="custom-dropdown">
+                <a href="#">Latihan Soal</a>
+                <ul class="custom-dropdown-menu">
+                    <li><a href="{{ route('quiz', ['quiz' => 'quiz-html']) }}">Latihan HTML</a></li>
+                    <li><a href="{{ route('quiz', ['quiz' => 'quiz-css']) }}">Latihan CSS</a></li>
+                    <li><a href="{{ route('quiz', ['quiz' => 'quiz-javascript']) }}">Latihan JS</a></li>
+                    <li><a href="{{ route('quiz', ['quiz' => 'quiz-php']) }}">Latihan PHP</a></li>
+                </ul>
+            </li>
+            <li><a href="{{ route('komunitas') }}">Komunitas</a></li>
         </ul>
         <div class="custom-hamburger">
             <i class="fas fa-bars"></i>
