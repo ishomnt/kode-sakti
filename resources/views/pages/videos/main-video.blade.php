@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/nav-pages.css') }}">
     <link rel="stylesheet" href="{{ asset('css/lihatvideo.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+
 </head>
 <body>
     @include('layout.navpage')
@@ -17,6 +19,15 @@
         @yield('content-video')
     </div>
 
+    @include('layout.footer')
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('current-year').textContent = currentYear;
+
+
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('js/script.js') }}"></script>
     </script>
@@ -47,5 +58,6 @@
             }
         });
     </script>
+
 </body>
 </html>

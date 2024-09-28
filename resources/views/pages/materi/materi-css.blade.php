@@ -1,6 +1,7 @@
 @extends('pages.materi.main-materi')
 @section('title', 'Materi CSS Dasar')
 @section('content-materi')
+    <h2 class="section-title">Materi CSS</h2>
     <div class="tutorial-header">
         <img src="{{ asset('image/css2.png') }}" alt="Tutorial Image" class="tutorial-image">
         <div class="tutorial-text">
@@ -12,17 +13,17 @@
     <hr>
     <div class="tutorial-list">
         <div class="tutorial-item">
-            <a href="tutorial-css-01.html">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-css1']) }}">
                 <span class="icon">📄</span> Tutorial CSS #01: Pengenalan Dasar CSS untuk Pemula
             </a>
         </div>
         <div class="tutorial-item">
-            <a href="tutorial-css-02.html">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-css2']) }}">
                 <span class="icon">📄</span> Tutorial CSS #02: Cara Menulis CSS Di HTML
             </a>
         </div>
         <div class="tutorial-item">
-            <a href="tutorial-css-03.html">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-css3']) }}">
                 <span class="icon">📄</span> Tutorial CSS #03: Sintaks Dasar CSS Yang Harus Dipahami
             </a>
         </div>

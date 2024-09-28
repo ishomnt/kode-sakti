@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
-<body>
-    <div class="container">
-        <header>
+@extends('pages.materi.isi-materi.main-materi-php')
+@section('title', 'Isi Materi PHP #3')
+@section('content-isimateri')
+        <header1>
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
             <h1 class="article-title">Tutorial PHP #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data</h1>
             <hr class="title-underline">
-        </header>
+        </header1>
 
         <div class="article-image">
             <img src="{{ asset('image/php.jpg') }}" alt="Gambar Variabel dan Tipe Data PHP">
@@ -146,43 +139,32 @@ unset($nama); // Menghapus variabel $nama dari memori
             <p>
                 Selamat belajar dan bereksperimen dengan PHP! Pemahaman yang baik tentang variabel dan tipe data akan membantu kamu dalam pengembangan aplikasi yang lebih kompleks.
             </p>
-        </div>
-    </div>
 
-    <div class="container2">
-        <h2 class="h2container">Daftar isi tutorial</h2>
+        </div>
+        @section('content-isimateri2')
+            <h2 class="h2container">Daftar isi tutorial</h2>
 
-        <div class="list-item ">
-            <a href="#" class="list-link">
-                <span class="icon">&#128196;</span>
-                Tutorial PHP #01: Pengenalan Dasar Pemrograman PHP
-            </a>
+            <div class="list-item ">
+                <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php1']) }}" class="list-link">
+                    <span class="icon">&#128196;</span>
+                    Tutorial PHP #01: Pengenalan Dasar Pemrograman PHP
+                </a>
+            </div>
+
+            <div class="list-item">
+                <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php2']) }}" class="list-link">
+                    <span class="icon">&#128196;</span>
+                    Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami
+                </a>
+            </div>
+
+            <div class="list-item checked">
+                <a href="#" class="list-link">
+                    <span class="icon">&#x2714;</span>
+                    Tutorial PHP #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data
+                </a>
+            </div>
         </div>
 
-        <div class="list-item">
-            <a href="" class="list-link">
-                <span class="icon">&#128196;</span>
-                Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami
-            </a>
-        </div>
-
-        <div class="list-item checked">
-            <a href="" class="list-link">
-                <span class="icon">&#x2714;</span>
-                Tutorial PHP #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data
-            </a>
-        </div>
-    </div>
-    <script>
-        function copyCode(button) {
-            const code = button.nextElementSibling.innerText;
-            navigator.clipboard.writeText(code).then(() => {
-                button.innerText = "Code berhasil disalin!";
-                setTimeout(() => {
-                    button.innerText = "Salin";
-                }, 2000);
-            });
-        }
-    </script>
-</body>
-</html>
+@endsection
+@endsection

@@ -96,7 +96,7 @@
 {{-- Modal Materi --}}
 <div id="modal-materi" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close1">&times;</span>
         <div class="button-grid">
             <a href="{{ route('materi', ['materi' => 'materi-html']) }}" class="btn-modal">HTML</a>
             <a href="{{ route('materi', ['materi' => 'materi-css']) }}" class="btn-modal">CSS</a>
@@ -109,12 +109,12 @@
 {{-- Modal Quiz --}}
 <div id="modal-quiz" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close2">&times;</span>
         <div class="button-grid">
-            <a href="{{ route('quiz') }}" class="btn-modal">HTML</a>
-            <a href="{{ route('materi', ['materi' => 'materi-css']) }}" class="btn-modal">CSS</a>
-            <a href="{{ route('materi', ['materi' => 'materi-javascript']) }}" class="btn-modal">JavaScript</a>
-            <a href="{{ route('materi', ['materi' => 'materi-php']) }}" class="btn-modal">PHP</a>
+            <a href="{{ route('quiz', ['quiz' => 'quiz-html']) }}" class="btn-modal">HTML</a>
+            <a href="{{ route('quiz', ['quiz' => 'quiz-css']) }}" class="btn-modal">CSS</a>
+            <a href="{{ route('quiz', ['quiz' => 'quiz-javascript']) }}" class="btn-modal">JavaScript</a>
+            <a href="{{ route('quiz', ['quiz' => 'quiz-php']) }}" class="btn-modal">PHP</a>
           </div>
     </div>
 </div>

@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial CSS #01: Pengenalan Dasar CSS untuk Pemula</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
-<body>
-    <div class="container">
-        <header>
+@extends('pages.materi.isi-materi.main-materi')
+@section('title', 'Isi Materi CSS #1')
+@section('content-isimateri')
+
+        <header1>
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
             <h1 class="article-title">Tutorial CSS #01: Pengenalan Dasar CSS untuk Pemula</h1>
             <hr class="title-underline">
-        </header>
+        </header1>
         <div class="article-image">
             <img src="{{ asset('image/css.webp') }}" alt="Gambar CSS">
         </div>
@@ -68,8 +62,8 @@
                 <em>Pemahaman CSS adalah kunci untuk menjadi pengembang web yang handal!</em>
             </p>
         </div>
-    </div>
-    <div class="container2">
+
+        @section('content-isimateri2')
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item checked">
@@ -80,19 +74,17 @@
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-css2']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial CSS #02: Cara Menulis CSS di HTML
             </a>
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-css3']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial CSS #03: Sintaks Dasar CSS yang Harus Dipahami
             </a>
         </div>
-    </div>
-
-</body>
-</html>
+@endsection
+@endsection

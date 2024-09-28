@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial #01: Pengenalan Dasar Pemrograman PHP</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
-<body>
-    <div class="container">
-        <header>
+@extends('pages.materi.isi-materi.main-materi-php')
+@section('title', 'Isi Materi PHP #1')
+@section('content-isimateri')
+
+        <header1>
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
             <h1 class="article-title">Tutorial PHP #01: Pengenalan Dasar Pemrograman PHP</h1>
             <hr class="title-underline">
-        </header>
+        </header1>
 
         <div class="article-image">
             <img src="{{ asset('image/php.jpg') }}" alt="Gambar Pemrograman PHP">
@@ -78,9 +72,9 @@ echo "Hello, World!";
                 Dengan memahami dasar-dasar PHP, kamu bisa mulai membangun aplikasi web yang dinamis dan interaktif. Selamat belajar! Cobalah untuk bereksperimen dengan kode yang telah kamu pelajari dan terus tingkatkan kemampuanmu.
             </p>
         </div>
-    </div>
 
-    <div class="container2">
+
+    @section('content-isimateri2')
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item checked">
@@ -91,18 +85,17 @@ echo "Hello, World!";
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php2']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami
             </a>
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php3']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial PHP #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data
             </a>
         </div>
-    </div>
-</body>
-</html>
+@endsection
+@endsection

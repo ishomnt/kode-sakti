@@ -17,6 +17,8 @@ const btnVideo = document.getElementById("btn-video");
 const btnMateri = document.getElementById("btn-materi");
 const btnQuiz = document.getElementById("btn-quiz");
 const span = document.getElementsByClassName("close")[0];
+const spanMateri = document.getElementsByClassName("close1")[0];
+const spanQuiz = document.getElementsByClassName("close2")[0];
 
 btnVideo.onclick = function() {
   modalVideo.style.display = "flex";
@@ -41,11 +43,20 @@ btnQuiz.onclick = function() {
 
 span.onclick = function() {
   modalVideo.classList.remove('show');
-  modalMateri.classList.remove('show');
-  modalQuiz.classList.remove('show');
   setTimeout(() => {
     modalVideo.style.display = "none";
+  }, 200);
+}
+
+spanMateri.onclick = function() {
+  modalMateri.classList.remove('show');
+  setTimeout(() => {
     modalMateri.style.display = "none";
+  }, 200);
+}
+spanQuiz.onclick = function() {
+  modalQuiz.classList.remove('show');
+  setTimeout(() => {
     modalQuiz.style.display = "none";
   }, 200);
 }

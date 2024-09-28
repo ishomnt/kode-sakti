@@ -4,7 +4,7 @@
         <div class="card">
             <div class="card-header">
                 <span class="badge">HTML</span>
-                <h3 class="card-title">Video belajar dan latihan soal Tes Skolastik</h3>
+                <h3 class="card-title">#1: Pengenalan Dasar HTML untuk Pemula</h3>
             </div>
             <div class="card-body">
                 <img src="{{ asset('image/belajar1.jpg') }}" alt="belajar 1" class="card-image">
@@ -15,7 +15,7 @@
         <div class="card">
             <div class="card-header">
                 <span class="badge">CSS</span>
-                <h3 class="card-title">Live Teaching interaktif + konsultasi PR</h3>
+                <h3 class="card-title">#3: Sintaks Dasar CSS yang Harus Dipahami</h3>
             </div>
             <div class="card-body">
                 <img src="{{ asset('image/belajar3.jpg') }}" alt="belajar 3" class="card-image">
@@ -26,7 +26,7 @@
         <div class="card">
             <div class="card-header">
                 <span class="badge">JavaScript</span>
-                <h3 class="card-title">Live Teaching interaktif + konsultasi PR</h3>
+                <h3 class="card-title">#2: 4 Cara Menampilkan Output pada JavaScript</h3>
             </div>
             <div class="card-body">
                 <img src="{{ asset('image/belajar3.jpg') }}" alt="belajar 3" class="card-image">
@@ -37,7 +37,7 @@
         <div class="card">
             <div class="card-header">
                 <span class="badge">PHP</span>
-                <h3 class="card-title">Kursus bahasa Inggris bersama Native Teacher</h3>
+                <h3 class="card-title">#1: Pengenalan Dasar Pemrograman PHP</h3>
             </div>
             <div class="card-body">
                 <img src="{{ asset('image/images.jpeg') }}" alt="belajar 4" class="card-image">

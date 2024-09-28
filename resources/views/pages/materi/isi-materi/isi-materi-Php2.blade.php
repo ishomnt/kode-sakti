@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial #03: Sintaks Dasar PHP yang Wajib Kamu Pahami</title>
-    <link rel="stylesheet" href="{{ asset('css/isimateri.css') }}">
-</head>
-<body>
-    <div class="container">
-        <header>
+@extends('pages.materi.isi-materi.main-materi-php')
+@section('title', 'Isi Materi PHP #2')
+@section('content-isimateri')
+
+        <header1>
             <div class="article-meta">
                 <span class="author">Kang Tino | September 20, 2024</span>
             </div>
             <h1 class="article-title">Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami</h1>
             <hr class="title-underline">
-        </header>
+        </header1>
 
         <div class="article-image">
             <img src="{{ asset('image/php.jpg') }}" alt="Gambar Sintaks Dasar PHP">
@@ -133,42 +127,30 @@ if ($umur >= 18) {
                 Selamat belajar dan bereksperimen dengan PHP! Pemahaman yang kuat tentang sintaks dasar adalah langkah awal menuju pengembangan aplikasi yang lebih kompleks. Teruslah berlatih dan jangan ragu untuk mencoba hal-hal baru!
             </p>
         </div>
-    </div>
-    <div class="container2">
+
+    @section('content-isimateri2')
         <h2 class="h2container">Daftar isi tutorial</h2>
 
         <div class="list-item ">
-            <a href="#" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php1']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial PHP #01: Pengenalan Dasar Pemrograman PHP
             </a>
         </div>
 
         <div class="list-item checked">
-            <a href="" class="list-link">
+            <a href="#" class="list-link">
                 <span class="icon">&#x2714;</span>
                 Tutorial PHP #02: Sintaks Dasar PHP yang Wajib Kamu Pahami
             </a>
         </div>
 
         <div class="list-item">
-            <a href="" class="list-link">
+            <a href="{{ route('isi-materi', ['isimateri' => 'isi-materi-php3']) }}" class="list-link">
                 <span class="icon">&#128196;</span>
                 Tutorial PHP #03: 5 Hal Dasar yang Harus Diketahui tentang Variabel dan Tipe Data
             </a>
         </div>
-    </div>
 
-    <script>
-        function copyCode(button) {
-            const code = button.nextElementSibling.innerText;
-            navigator.clipboard.writeText(code).then(() => {
-                button.innerText = "Code berhasil disalin!";
-                setTimeout(() => {
-                    button.innerText = "Salin";
-                }, 2000);
-            });
-        }
-    </script>
-</body>
-</html>
+@endsection
+@endsection

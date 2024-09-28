@@ -3,10 +3,39 @@
         <a href="" class="custom-logo"><img src="{{ asset('image/Logo BeCo.png') }}" class="custom-logo-img" alt=""></a>
         <ul class="custom-nav-items">
             <li><a href="{{ route('main') }}">Beranda</a></li>
-            <li><a href="#">Video Tutorial</a></li>
-            <li><a href="#">Materi</a></li>
-            <li><a href="#">Latihan Soal</a></li>
-            <li><a href="#">Komunitas</a></li>
+
+            <!-- Video Tutorial Dropdown -->
+            <li class="custom-dropdown">
+                <a href="#">Video Tutorial</a>
+                <ul class="custom-dropdown-menu">
+                    <li><a href="{{ asset('video/tutorial-html') }}">Tutorial HTML</a></li>
+                    <li><a href="{{ asset('video/tutorial-css') }}">Tutorial CSS</a></li>
+                    <li><a href="{{ asset('video/tutorial-javascript') }}">Tutorial JS</a></li>
+                    <li><a href="{{ asset('video/tutorial-php') }}">Tutorial PHP</a></li>
+                </ul>
+            </li>
+
+            <!-- Materi Dropdown -->
+            <li class="custom-dropdown">
+                <a href="{{ asset('materi/semua-materi') }}">Materi</a>
+                <ul class="custom-dropdown-menu">
+                    <li><a href="{{ route('materi', ['materi' => 'materi-html']) }}">Materi HTML</a></li>
+                    <li><a href="{{ route('materi', ['materi' => 'materi-css']) }}">Materi CSS</a></li>
+                    <li><a href="{{ route('materi', ['materi' => 'materi-javascript']) }}">Materi JS</a></li>
+                    <li><a href="{{ route('materi', ['materi' => 'materi-php']) }}">Materi PHP</a></li>
+                </ul>
+            </li>
+
+            <li class="custom-dropdown">
+                <a href="#">Latihan Soal</a>
+                <ul class="custom-dropdown-menu">
+                    <li><a href="{{ route('quiz', ['quiz' => 'quiz-html']) }}">Latihan HTML</a></li>
+                    <li><a href="{{ route('quiz', ['quiz' => 'quiz-css']) }}">Latihan CSS</a></li>
+                    <li><a href="{{ route('quiz', ['quiz' => 'quiz-javascript']) }}">Latihan JS</a></li>
+                    <li><a href="{{ route('quiz', ['quiz' => 'quiz-php']) }}">Latihan PHP</a></li>
+                </ul>
+            </li>
+            <li><a href="{{ route('komunitas') }}">Komunitas</a></li>
         </ul>
         <div class="custom-hamburger">
             <i class="fas fa-bars"></i>

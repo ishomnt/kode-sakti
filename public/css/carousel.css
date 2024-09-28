@@ -42,6 +42,7 @@
     font-size: 2em;
     margin: 0;
     line-height: 1.2;
+    margin-bottom:20px ;
 }
 
 .slider .list .item .content p:nth-child(1) {
@@ -50,8 +51,8 @@
 }
 
 .slider .list .item .content p:nth-child(3) {
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 1.3em;
+    line-height: 1.2;
 }
 
 .slider .list .item.active {
@@ -255,7 +256,7 @@
 }
 
 /* The close button */
-.close {
+.close, .close1, .close2 {
     color: #aaa;
     position: absolute;
     right: 20px;
@@ -265,8 +266,8 @@
     cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close1:hover, .close2:hover,
+.close:focus, .close1:focus, .close2:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;

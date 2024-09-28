@@ -1,5 +1,5 @@
 @extends('pages.videos.main-video')
-@section('title', 'Video Tutorial HTML & CSS')
+@section('title', 'Video Tutorial HTML Dasar')
 @section('content-video')
     <h2 class="section-title">Video Tutorial HTML</h2>
     <!-- Video 1 -->
