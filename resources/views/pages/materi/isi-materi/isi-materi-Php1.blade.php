@@ -1,4 +1,4 @@
-@extends('pages.materi.isi-materi.main-materi')
+@extends('pages.materi.isi-materi.main-materi-php')
 @section('title', 'Isi Materi PHP #1')
 @section('content-isimateri')
 

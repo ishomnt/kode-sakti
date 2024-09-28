@@ -6,6 +6,7 @@ use App\Http\Controllers\IsiMateriController;
 use App\Http\Controllers\KomunitasController;
 use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CodeController;
 
 
 Route::get('/', function () {
@@ -26,3 +27,4 @@ Route::get('komunitas', function () {
 
 Route::get('/quiz/{quiz}', [QuizController::class, 'show'])->name('quiz');
 Route::get('/score', function(){return view('pages.quiz.score');})->name('score');
+Route::get('/execute-code', [CodeController::class, 'executeCode']);

@@ -20,7 +20,7 @@
 
 
 
-    @include('pages.materi.isi-materi.compiler')
+    @include('pages.materi.isi-materi.compiler-php')
 
     <div class="content1">
         @yield('content-isimateri2')
