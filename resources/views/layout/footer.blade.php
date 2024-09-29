@@ -27,10 +27,10 @@
         <div class="footer-col">
           <h4 class="text-primary">Fitur</h4>
           <ul>
-            <li><a href="#">Latihan Soal</a></li>
-            <li><a href="#">Tantangan Kode</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="#">Forum Komunitas</a></li>
+            <li><a href="#fitur">Video Tutorial</a></li>
+            <li><a href="#fitur">Materi Pembelajaran</a></li>
+            <li><a href="#fitur">Latihan Soal</a></li>
+            <li><a href="#fitur">Forum Komunitas</a></li>
           </ul>
         </div>
 

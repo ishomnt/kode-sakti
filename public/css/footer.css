@@ -11,7 +11,6 @@ html, body {
     flex: 1;
 }
 
-
 .footer {
     background-color: #24262b;
     color: #ecf0f1;
@@ -163,35 +162,34 @@ html, body {
 }
 
 #scrollToTopBtn {
-    background-color: #5963f3; /* Warna latar belakang tombol */
+    background-color: #5963f3;
     border: none;
-    border-radius: 5px; /* Ubah menjadi kotak dengan sudut sedikit melengkung */
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    display: none; /* Disembunyikan secara default */
-    padding: 0; /* Hapus padding untuk mengatur tinggi dan lebar tombol */
+    display: none;
+    padding: 0;
     padding-top: 7px;
-    width: 50px; /* Lebar tombol */
-    height: 50px; /* Tinggi tombol */
+    width: 50px;
+    height: 50px;
     text-align: center;
-    line-height: 50px; /* Menyelaraskan ikon di tengah secara vertikal */
-    font-size: 24px; /* Ukuran ikon */
-    color: #ecf0f1; /* Warna ikon */
+    line-height: 50px;
+    font-size: 24px;
+    color: #ecf0f1;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 #scrollToTopBtn:hover {
-    background-color: #144b75; /* Warna latar belakang saat hover */
+    background-color: #144b75;
     transform: scale(1.1);
 }
 
-/* Responsif untuk layar lebih kecil */
 @media (max-width: 768px) {
     #scrollToTopBtn {
         width: 40px;
         height: 40px;
-        line-height: 40px; /* Sesuaikan dengan tinggi tombol */
-        font-size: 20px; /* Ukuran ikon */
+        line-height: 40px;
+        font-size: 20px;
     }
 }
 

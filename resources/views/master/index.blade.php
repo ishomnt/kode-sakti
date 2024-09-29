@@ -5,6 +5,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="icon" href="{{ asset('image/Logo Beco.png') }}">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
             <link rel="stylesheet" href="{{ asset('css/style.css') }}">
             <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
@@ -133,32 +134,31 @@
 
             <script>
                 function toggleAnswer(event, answerId) {
-                    event.preventDefault(); // Prevent the default link behavior
-
+                    event.preventDefault();
                     const answerElements = document.querySelectorAll('.faq-answer');
                     const iconElements = document.querySelectorAll('.faq-link iconify-icon');
 
-                    // Hide all answers and reset icons
+
                     answerElements.forEach(answer => {
                         if (answer.id !== answerId) {
-                            answer.style.display = "none"; // Hide other answers
+                            answer.style.display = "none";
                         }
                     });
 
                     iconElements.forEach(icon => {
-                        icon.style.transform = "rotate(0deg)"; // Reset other icons
+                        icon.style.transform = "rotate(0deg)";
                     });
 
                     const answerElement = document.getElementById(answerId);
                     const iconElement = event.currentTarget.querySelector('iconify-icon');
 
-                    // Toggle the clicked answer
+
                     if (answerElement.style.display === "none" || answerElement.style.display === "") {
-                        answerElement.style.display = "block"; // Show the answer
-                        iconElement.style.transform = "rotate(90deg)"; // Rotate the icon
+                        answerElement.style.display = "block";
+                        iconElement.style.transform = "rotate(90deg)";
                     } else {
-                        answerElement.style.display = "none"; // Hide the answer
-                        iconElement.style.transform = "rotate(0deg)"; // Reset the icon
+                        answerElement.style.display = "none";
+                        iconElement.style.transform = "rotate(0deg)";
                     }
                 }
             </script>
@@ -170,7 +170,6 @@
                 hamburger.addEventListener('click', () => {
                     mobileMenu.classList.toggle('active');
 
-                    // Ganti ikon antara hamburger dan X
                     if (mobileMenu.classList.contains('active')) {
                         icon.classList.remove('fa-bars');
                         icon.classList.add('fa-times');
@@ -182,7 +181,7 @@
 
                 window.addEventListener('scroll', function() {
                     const header = document.querySelector('header');
-                    if (window.scrollY > 50) { // Adjust the value as needed
+                    if (window.scrollY > 50) {
                         header.classList.add('scrolled');
                     } else {
                         header.classList.remove('scrolled');
@@ -216,7 +215,7 @@
                         const targetId = this.getAttribute('href').substring(1);
                         const targetElement = document.getElementById(targetId);
 
-                        const offset = 80; // Adjust this value to set the offset height
+                        const offset = 80;
                         const elementPosition = targetElement.getBoundingClientRect().top;
                         const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -228,7 +227,7 @@
                 });
             </script>
 
-            <!-- Scripts remain the same -->
+
             <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
             <script src="{{ asset('js/carousel.js') }}"></script>
             <script src="{{ asset('js/script.js') }}"></script>

@@ -1,4 +1,4 @@
-<div class="slider">
+<div class="slider" id="fitur">
     <!-- list Items -->
     <div class="list">
         <div class="item active">
