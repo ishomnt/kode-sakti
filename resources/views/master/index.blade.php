@@ -23,10 +23,10 @@
                 @include('layout.card-video')
                 @include('layout.card-materi')
                 <section class="about-section" id="about">
+                    <h2 class="services-title" style="text-align: center; margin-bottom: 40px;">Tentang</h2>
                     <div class="about-container">
                         <div class="about-content">
                             <div class="about-text">
-                                <h2 class="heading2">Tentang</h2>
                                 <p class="about-description">
                                     Belajar Coding, yang didirikan pada 20 September 2024, adalah platform terbaik untuk
                                     mempelajari pemrograman dan teknologi. Misi kami adalah membantu individu, baik
