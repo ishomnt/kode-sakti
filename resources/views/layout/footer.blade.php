@@ -40,19 +40,19 @@
           <div class="social-links">
             <div class="social-item">
               <iconify-icon icon="skill-icons:instagram" width="32" height="32"></iconify-icon>
-              <p>@instagram_username</p>
+              <p>@rpl_skaneda</p>
             </div>
             <div class="social-item">
               <iconify-icon icon="devicon:facebook" width="32" height="32"></iconify-icon>
-              <p>@facebook_username</p>
+              <p>@rpl_skaneda</p>
             </div>
             <div class="social-item">
               <iconify-icon icon="logos:twitter" width="32" height="32"></iconify-icon>
-              <p>@twitter_username</p>
+              <p>@rpl_skaneda</p>
             </div>
             <div class="social-item">
               <iconify-icon icon="logos:tiktok-icon" width="32" height="32"></iconify-icon>
-              <p>@tiktok_username</p>
+              <p>@rpl_skaneda</p>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@
       <div class="footer-bottom">
         <p style="text-align: left;"><span style="color: red;">* </span>Video yang terlibat pada project ini hanya merupakan contoh dan bersifat sementara</p>
         <hr class="footer-line">
-        <p>&copy; <span id="current-year"></span> Website Anda. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> Website RPL Skaneda. All rights reserved.</p>
       </div>
     </div>
   </footer>

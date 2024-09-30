@@ -20,7 +20,7 @@
     flex-wrap: wrap;
 }
 
-.about-text h2{
+.about-text h2 {
     margin-bottom: 15px;
 }
 
@@ -46,8 +46,6 @@
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .about-description {
     font-size: 1.1em;
@@ -233,13 +231,14 @@
     display: none;
 }
 
-.faq-card h3{
+.faq-card h3 {
     font-size: 1em;
 }
 
-.faq-card p{
+.faq-card p {
     font-size: 0.9em;
 }
+
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -252,7 +251,6 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-
 }
 
 .faq-card iconify-icon {
@@ -282,7 +280,6 @@
     }
 }
 
-
 .faq-link {
     text-decoration: none;
     color: inherit;
@@ -311,6 +308,77 @@
         font-size: 1.5em;
     }
     .faq-subtitle {
+        font-size: 0.9em;
+    }
+}
+
+.chatbot-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.chatbot-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.chatbot-title {
+    font-size: 2em;
+    color: #1b3c83;
+    margin-bottom: 15px;
+}
+
+.chatbot-description {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.chatbot-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #1b3c83; /* Warna tombol */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.chatbot-button:hover {
+    background-color: #155a8a; /* Warna saat hover */
+}
+
+@media (max-width: 1000px) {
+    .chatbot-section {
+        padding: 30px 20px;
+    }
+    .chatbot-title {
+        font-size: 1.8em;
+    }
+    .chatbot-description {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .chatbot-container {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .chatbot-section {
+        padding: 20px;
+    }
+    .chatbot-title {
+        font-size: 1.5em;
+    }
+    .chatbot-description {
         font-size: 0.9em;
     }
 }
