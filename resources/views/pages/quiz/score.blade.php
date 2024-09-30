@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Skor</title>
     <link rel="icon" href="{{ asset('image/Logo Beco.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('css/nav-pages.css') }}" rel="stylesheet">
     <style>
         .container-main {
             width: 100%;
@@ -58,6 +60,7 @@
 </head>
 
 <body>
+    @include('layout.navpage')
     <div class="container-main">
         <div class="score-container">
             <h1>Skor Kamu</h1>
@@ -66,6 +69,37 @@
             <a href="{{ route('main') }}" class="btn btn-dashboard">Kembali ke Halaman Utama</a>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+    </script>
+    <script>
+        const hamburger = document.querySelector('.custom-hamburger');
+        const mobileMenu = document.querySelector('.custom-mobile-menu');
+        const icon = hamburger.querySelector('i');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+
+            // Ganti ikon antara hamburger dan X
+            if (mobileMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>

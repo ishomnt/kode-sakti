@@ -307,10 +307,14 @@
         justify-content: space-between;
     }
     .menu-btn {
-        flex: 0 1 calc(50% - 20px);
+        flex: 0 1 calc(50% - 10px);
         margin: 5px 0;
         font-size: 0.9em;
         padding: 10px 0 10px 0;
+    }
+    .menu-btn iconify-icon{
+        margin-left: 10px;
+        margin-right: 5px;
     }
 }
 
@@ -326,6 +330,10 @@
         margin: 10px 0;
         font-size: 0.8em;
         padding: 10px 0 10px 0;
+    }
+    .menu-btn iconify-icon{
+        margin-left: 10px;
+        margin-right: 5px;
     }
 }
 
