@@ -20,6 +20,7 @@
             <li><a href="#about">Tentang</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
           </ul>
         </div>
 
@@ -31,6 +32,7 @@
             <li><a href="#fitur">Materi Pembelajaran</a></li>
             <li><a href="#fitur">Latihan Soal</a></li>
             <li><a href="#fitur">Forum Komunitas</a></li>
+            <li><a href="{{ route('chatbot') }}">Fitur Chatbot</a></li>
           </ul>
         </div>
 

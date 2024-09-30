@@ -36,6 +36,7 @@
                 </ul>
             </li>
             <li><a href="{{ route('komunitas') }}">Komunitas</a></li>
+            <li><a href="{{ route('chatbot') }}">Chatbot</a></li>
         </ul>
         <div class="custom-hamburger">
             <i class="fas fa-bars"></i>
@@ -48,6 +49,7 @@
             <li><a href="#">Materi</a></li>
             <li><a href="#">Latihan Soal</a></li>
             <li><a href="#">Komunitas</a></li>
+            <li><a href="#">Chatbot</a></li>
         </ul>
     </div>
 </header>
