@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum Pertanyaan</title>
+    <link rel="icon" href="{{ asset('image/Logo Beco.png') }}">
     <link rel="stylesheet" href="{{ asset('css/isikomunitas.css') }}">
 </head>
 <body>

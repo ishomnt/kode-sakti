@@ -28,3 +28,5 @@ Route::get('komunitas', function () {
 Route::get('/quiz/{quiz}', [QuizController::class, 'show'])->name('quiz');
 Route::get('/score', function(){return view('pages.quiz.score');})->name('score');
 Route::get('/execute-code', [CodeController::class, 'executeCode']);
+
+Route::get('/chatbot', function(){return view('layout.chatbot');})->name('chatbot');

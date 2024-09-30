@@ -15,7 +15,13 @@
     <div class="row">
         <div class="col-md-6">
             <div id="phpEditor"></div>
-            <button class="run" onclick="runPHPCode()">Run</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="run" onclick="runPHPCode()">Run</button>
+                    <a style="text-decoration: none; color:white" href="{{ route('chatbot') }}"><button class="chatbot">ChatBot</button></a>
+                </div>
+
+            </div>
         </div>
         <div class="col-md-6">
             <div class="output-title">Output</div>

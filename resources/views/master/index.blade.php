@@ -5,6 +5,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="icon" href="{{ asset('image/Logo Beco.png') }}">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
             <link rel="stylesheet" href="{{ asset('css/style.css') }}">
             <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
@@ -23,10 +24,10 @@
                 @include('layout.card-video')
                 @include('layout.card-materi')
                 <section class="about-section" id="about">
+                    <h2 class="services-title" style="text-align: center; margin-bottom: 40px;">Tentang</h2>
                     <div class="about-container">
                         <div class="about-content">
                             <div class="about-text">
-                                <h2 class="heading2">Tentang</h2>
                                 <p class="about-description">
                                     Belajar Coding, yang didirikan pada 20 September 2024, adalah platform terbaik untuk
                                     mempelajari pemrograman dan teknologi. Misi kami adalah membantu individu, baik
@@ -127,38 +128,45 @@
                         </div>
                     </div>
                 </section>
+                <section class="chatbot-section" id="chatbot">
+                    <div class="chatbot-container">
+                        <h2 class="chatbot-title">Chatbot</h2>
+                        <p class="chatbot-description">
+                            Chatbot kami dirancang khusus untuk memudahkan Anda dalam menjelajahi berbagai layanan yang kami tawarkan. Tidak peduli kapan Anda membutuhkan bantuan, chatbot kami siap siaga 24/7 untuk menjawab pertanyaan Anda secara cepat dan akurat. Dengan kecerdasan buatan yang terus diperbarui, chatbot kami mampu memahami pertanyaan Anda secara lebih mendalam dan memberikan solusi yang relevan. Baik Anda mencari informasi mengenai produk, layanan, atau sekadar ingin mendapatkan panduan langkah demi langkah, kami hadir untuk memastikan pengalaman Anda berjalan lancar. Jelajahi kemudahan interaksi tanpa batas, kapan pun dan di mana pun Anda berada.
+                        </p>
+                        <a href="{{ route('chatbot') }}" class="chatbot-button">Buka Chat</a>
+                    </div>
+                </section>
             </div>
-
             @include('layout.footer')
 
             <script>
                 function toggleAnswer(event, answerId) {
-                    event.preventDefault(); // Prevent the default link behavior
-
+                    event.preventDefault();
                     const answerElements = document.querySelectorAll('.faq-answer');
                     const iconElements = document.querySelectorAll('.faq-link iconify-icon');
 
-                    // Hide all answers and reset icons
+
                     answerElements.forEach(answer => {
                         if (answer.id !== answerId) {
-                            answer.style.display = "none"; // Hide other answers
+                            answer.style.display = "none";
                         }
                     });
 
                     iconElements.forEach(icon => {
-                        icon.style.transform = "rotate(0deg)"; // Reset other icons
+                        icon.style.transform = "rotate(0deg)";
                     });
 
                     const answerElement = document.getElementById(answerId);
                     const iconElement = event.currentTarget.querySelector('iconify-icon');
 
-                    // Toggle the clicked answer
+
                     if (answerElement.style.display === "none" || answerElement.style.display === "") {
-                        answerElement.style.display = "block"; // Show the answer
-                        iconElement.style.transform = "rotate(90deg)"; // Rotate the icon
+                        answerElement.style.display = "block";
+                        iconElement.style.transform = "rotate(90deg)";
                     } else {
-                        answerElement.style.display = "none"; // Hide the answer
-                        iconElement.style.transform = "rotate(0deg)"; // Reset the icon
+                        answerElement.style.display = "none";
+                        iconElement.style.transform = "rotate(0deg)";
                     }
                 }
             </script>
@@ -170,7 +178,6 @@
                 hamburger.addEventListener('click', () => {
                     mobileMenu.classList.toggle('active');
 
-                    // Ganti ikon antara hamburger dan X
                     if (mobileMenu.classList.contains('active')) {
                         icon.classList.remove('fa-bars');
                         icon.classList.add('fa-times');
@@ -182,7 +189,7 @@
 
                 window.addEventListener('scroll', function() {
                     const header = document.querySelector('header');
-                    if (window.scrollY > 50) { // Adjust the value as needed
+                    if (window.scrollY > 50) {
                         header.classList.add('scrolled');
                     } else {
                         header.classList.remove('scrolled');
@@ -216,7 +223,7 @@
                         const targetId = this.getAttribute('href').substring(1);
                         const targetElement = document.getElementById(targetId);
 
-                        const offset = 80; // Adjust this value to set the offset height
+                        const offset = 80;
                         const elementPosition = targetElement.getBoundingClientRect().top;
                         const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -228,7 +235,7 @@
                 });
             </script>
 
-            <!-- Scripts remain the same -->
+
             <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
             <script src="{{ asset('js/carousel.js') }}"></script>
             <script src="{{ asset('js/script.js') }}"></script>

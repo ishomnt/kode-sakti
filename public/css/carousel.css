@@ -310,6 +310,7 @@
         flex: 0 1 calc(50% - 20px);
         margin: 5px 0;
         font-size: 0.9em;
+        padding: 10px 0 10px 0;
     }
 }
 
@@ -321,9 +322,10 @@
         justify-content: space-between;
     }
     .menu-btn {
-        flex: 0 1 calc(50% - 20px);
+        flex: 0 1 calc(50% - 10px);
         margin: 10px 0;
-        font-size: 0.9em;
+        font-size: 0.8em;
+        padding: 10px 0 10px 0;
     }
 }
 
