@@ -17,7 +17,6 @@
 
 <body>
     @include('layout.navpage')
-
     <div class="container m-top-2">
         @yield('content-materi')
     </div>

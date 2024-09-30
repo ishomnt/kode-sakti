@@ -128,8 +128,16 @@
                         </div>
                     </div>
                 </section>
+                <section class="chatbot-section" id="chatbot">
+                    <div class="chatbot-container">
+                        <h2 class="chatbot-title">Chatbot</h2>
+                        <p class="chatbot-description">
+                            Chatbot kami dirancang khusus untuk memudahkan Anda dalam menjelajahi berbagai layanan yang kami tawarkan. Tidak peduli kapan Anda membutuhkan bantuan, chatbot kami siap siaga 24/7 untuk menjawab pertanyaan Anda secara cepat dan akurat. Dengan kecerdasan buatan yang terus diperbarui, chatbot kami mampu memahami pertanyaan Anda secara lebih mendalam dan memberikan solusi yang relevan. Baik Anda mencari informasi mengenai produk, layanan, atau sekadar ingin mendapatkan panduan langkah demi langkah, kami hadir untuk memastikan pengalaman Anda berjalan lancar. Jelajahi kemudahan interaksi tanpa batas, kapan pun dan di mana pun Anda berada.
+                        </p>
+                        <a href="{{ route('chatbot') }}" class="chatbot-button">Buka Chat</a>
+                    </div>
+                </section>
             </div>
-
             @include('layout.footer')
 
             <script>

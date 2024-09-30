@@ -6,6 +6,7 @@
             <li><a href="#about">Tentang</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
         </ul>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
@@ -17,6 +18,7 @@
             <li><a href="#about">Tentang</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
         </ul>
     </div>
 </header>
